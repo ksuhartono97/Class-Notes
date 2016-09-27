@@ -4,6 +4,8 @@
 Draw circuits using cascading design (commonly used for large circuit)
 
 Example:
+Half bit adder
+
 ![Half- BitAdder](https://github.com/ksuhartono97/Class-Notes/blob/COMP2611/COMP2611/resources/unit1/halfbitadder.png)
 
 In circuits  a filled dot (.) in the lines signify a split in the circuit (it carries the same signal)
