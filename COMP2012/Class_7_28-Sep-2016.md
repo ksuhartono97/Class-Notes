@@ -74,7 +74,7 @@ is `private`, cannot use this method.
 Standard approach to initializing : using **constructors**
 
 ####Constructors:
-Default constructors: a constructor that can be called with **no** arguments
+**Default constructors**: a constructor that can be called with **no** arguments
 Meaning that you don't need to pass anything to the constructor.
 
 >Desmond's definition: If you call the constructor without passing anything to it, it is still happy
@@ -85,10 +85,10 @@ Answer: Yes. Purpose? If you want the constructor to be called only in member fu
 If **no** user defined constructor exists, the compiler will generate a default constructor
 for it `X:X(){}`.
 
-Conversion constructors: Accepts a single argument, which specifies a conversion from its
+**Conversion constructors**: Accepts a single argument, which specifies a conversion from its
 argument type to the type of its class.
 
-```
+```cpp
 class A{
     private:
         int a;
