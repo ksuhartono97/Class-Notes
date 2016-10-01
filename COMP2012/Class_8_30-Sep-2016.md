@@ -91,7 +91,7 @@ int main () {
 ```
 
 Exceptions:
-```
+```cpp
     A (A& mrHappy) {...}
     //not recognized as copy constructor
     //default constructor will be given
@@ -102,7 +102,7 @@ Exceptions:
     //This is an error, you don't get a constructor
 ```
 
-```
+```cpp
     A (const A mrHappy) {...}
     //Error
     //impossible situation
