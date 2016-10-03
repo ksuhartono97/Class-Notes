@@ -106,6 +106,7 @@ Sample K-map layouts:
 |   10  |  m8  | m9   | m11   | m10   |
 
 Another K-map example:
+
 | A\BC | 00 | 01 | 11 | 10 |
 |------|----|----|----|----|
 |   0  |  0 | 0  | 1  | 0   |
