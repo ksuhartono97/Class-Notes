@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d78d41c-4b01-40c7-ae44-f8c05570f25c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISOM2030/non_obviousness_and_patenting_process.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP2012/Class_10_7-Oct-2016.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md" afterPath="$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md" />
     </list>
     <ignored path="Class-Notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/COMP2012/Class_9_5-Oct-2016.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="786">
+              <first_editor relative-caret-position="922">
                 <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
                 <folding />
               </first_editor>
@@ -39,12 +40,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="non_obviousness_and_patenting_process.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="non_obviousness_and_patenting_process.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ISOM2030/non_obviousness_and_patenting_process.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="350">
-                <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+              <first_editor relative-caret-position="659">
+                <caret line="101" column="39" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Class_10_7-Oct-2016.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/COMP2012/Class_10_7-Oct-2016.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="702">
+                <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Unit_1_digi_circuit.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="374">
+                <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -65,10 +92,11 @@
         <option value="$PROJECT_DIR$/COMP2611/Unit_2_data_representation.md" />
         <option value="$PROJECT_DIR$/ISOM2030/lect.md" />
         <option value="$PROJECT_DIR$/ISOM2030/novelty_utility_patentability_innov.md" />
-        <option value="$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md" />
         <option value="$PROJECT_DIR$/COMP2012/Class_9_5-Oct-2016.md" />
         <option value="$PROJECT_DIR$/ISOM2030/non_obviousness.md" />
         <option value="$PROJECT_DIR$/ISOM2030/non_obviousness_and_patenting_process.md" />
+        <option value="$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md" />
+        <option value="$PROJECT_DIR$/COMP2012/Class_10_7-Oct-2016.md" />
       </list>
     </option>
   </component>
@@ -109,6 +137,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -171,8 +201,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,12 +295,13 @@
       <workItem from="1475473045233" duration="3540000" />
       <workItem from="1475482988284" duration="1250000" />
       <workItem from="1475656117703" duration="4984000" />
-      <workItem from="1475802736489" duration="3930000" />
+      <workItem from="1475802736489" duration="4247000" />
+      <workItem from="1475827246107" duration="5466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43291000" />
+    <option name="totallyTimeSpent" value="49074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -312,23 +341,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_7_28-Sep-2016.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1914">
-            <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_8_30-Sep-2016.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2288">
             <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -350,7 +367,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="3740">
             <caret line="170" column="34" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -361,7 +377,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1188">
             <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -372,7 +387,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1914">
             <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -383,7 +397,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2288">
             <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -405,7 +418,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="3740">
             <caret line="170" column="34" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -416,7 +428,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -427,7 +438,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1914">
             <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -438,7 +448,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2288">
             <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -460,7 +469,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -471,7 +479,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1914">
             <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -482,7 +489,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2288">
             <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -504,7 +510,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -515,7 +520,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1914">
             <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -526,7 +530,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2288">
             <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -548,7 +551,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -559,7 +561,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1914">
             <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -570,7 +571,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2288">
             <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -592,7 +592,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -603,7 +602,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1914">
             <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -614,7 +612,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2288">
             <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -636,7 +633,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1914">
             <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -647,7 +643,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2420">
             <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -658,7 +653,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1914">
             <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -669,7 +663,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -680,7 +673,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2442">
             <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -701,7 +693,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -722,7 +713,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -775,7 +765,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1914">
             <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -786,7 +775,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="3740">
             <caret line="170" column="34" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -797,18 +785,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1188">
             <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2354">
-            <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -819,6 +795,16 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2376">
             <caret line="108" column="40" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISOM2030/non_obviousness_and_patenting_process.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="659">
+            <caret line="101" column="39" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
             <folding />
           </first_editor>
           <second_editor />
@@ -828,7 +814,7 @@
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_9_5-Oct-2016.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="786">
+          <first_editor relative-caret-position="922">
             <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
             <folding />
           </first_editor>
@@ -836,11 +822,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ISOM2030/non_obviousness_and_patenting_process.md">
+    <entry file="file://$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="350">
-            <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+          <first_editor relative-caret-position="374">
+            <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_10_7-Oct-2016.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="702">
+            <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
