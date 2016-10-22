@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d78d41c-4b01-40c7-ae44-f8c05570f25c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP2012/Class_12_14-Oct-2016.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP2012/Class_13_19-Oct-2016.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md" afterPath="$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="Class-Notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,38 +26,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Class_10_7-Oct-2016.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMP2012/Class_10_7-Oct-2016.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="240">
-                <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Class_11_12-Oct-2016.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMP2012/Class_11_12-Oct-2016.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="579">
-                <caret line="158" column="67" selection-start-line="158" selection-start-column="67" selection-end-line="158" selection-end-column="67" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Class_12_14-Oct-2016.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Class_12_14-Oct-2016.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/COMP2012/Class_12_14-Oct-2016.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="624">
+              <first_editor relative-caret-position="1470">
                 <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dmca_uslaws_impact_global_commerce.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISOM2030/dmca_uslaws_impact_global_commerce.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1410">
+                <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Class_13_19-Oct-2016.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/COMP2012/Class_13_19-Oct-2016.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="594">
+                <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -93,6 +91,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md" />
         <option value="$PROJECT_DIR$/COMP2012/Class_12_14-Oct-2016.md" />
+        <option value="$PROJECT_DIR$/ISOM2030/dmca_uslaws_impact_global_commerce.md" />
+        <option value="$PROJECT_DIR$/COMP2012/Class_13_19-Oct-2016.md" />
       </list>
     </option>
   </component>
@@ -147,6 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -195,7 +196,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -301,17 +301,21 @@
       <workItem from="1476407020758" duration="2757000" />
       <workItem from="1476429103216" duration="164000" />
       <workItem from="1476433199629" duration="3554000" />
+      <workItem from="1476682409042" duration="360000" />
+      <workItem from="1476683105541" duration="3792000" />
+      <workItem from="1476865650122" duration="3924000" />
+      <workItem from="1476870609818" duration="141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61170000" />
+    <option name="totallyTimeSpent" value="69387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -345,26 +349,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_7_28-Sep-2016.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1914">
-            <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_8_30-Sep-2016.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2288">
-            <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -782,7 +766,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="240">
             <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -793,7 +776,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="195">
             <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -804,7 +786,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
             <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -815,7 +796,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="354">
             <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -824,8 +804,19 @@
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_11_12-Oct-2016.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="579">
+          <first_editor relative-caret-position="2370">
             <caret line="158" column="67" selection-start-line="158" selection-start-column="67" selection-end-line="158" selection-end-column="67" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISOM2030/dmca_uslaws_impact_global_commerce.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1410">
+            <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -835,8 +826,25 @@
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_12_14-Oct-2016.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="624">
+          <first_editor relative-caret-position="1470">
             <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_13_19-Oct-2016.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="594">
+            <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
