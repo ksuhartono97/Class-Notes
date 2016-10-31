@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d78d41c-4b01-40c7-ae44-f8c05570f25c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP2012/Class_15_29-Oct-2016.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISOM2030/software_patent_cases.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Class-Notes.iws" />
@@ -56,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/COMP2012/Class_14_26-Oct-2016.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="609">
+              <first_editor relative-caret-position="1935">
                 <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
                 <folding />
               </first_editor>
@@ -65,12 +65,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Class_15_29-Oct-2016.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Class_15_29-Oct-2016.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/COMP2012/Class_15_29-Oct-2016.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="669">
-                <caret line="282" column="0" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
+              <first_editor relative-caret-position="474">
+                <caret line="273" column="18" selection-start-line="273" selection-start-column="18" selection-end-line="273" selection-end-column="19" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="software_patent_cases.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ISOM2030/software_patent_cases.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="609">
+                <caret line="198" column="46" selection-start-line="198" selection-start-column="46" selection-end-line="198" selection-end-column="46" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -108,6 +121,7 @@
         <option value="$PROJECT_DIR$/ISOM2030/non_obviousness_and_patenting_process.md" />
         <option value="$PROJECT_DIR$/COMP2012/Class_14_26-Oct-2016.md" />
         <option value="$PROJECT_DIR$/COMP2012/Class_15_29-Oct-2016.md" />
+        <option value="$PROJECT_DIR$/ISOM2030/software_patent_cases.md" />
       </list>
     </option>
   </component>
@@ -162,8 +176,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -324,11 +338,12 @@
       <workItem from="1477470287762" duration="147000" />
       <workItem from="1477470527741" duration="4625000" />
       <workItem from="1477707184371" duration="6850000" />
+      <workItem from="1477891962996" duration="4559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81070000" />
+    <option name="totallyTimeSpent" value="85629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -368,16 +383,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ISOM2030/novelty_utility_patentability_innov.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_7_28-Sep-2016.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -851,7 +856,7 @@
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_14_26-Oct-2016.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="609">
+          <first_editor relative-caret-position="1935">
             <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
             <folding />
           </first_editor>
@@ -862,8 +867,19 @@
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_15_29-Oct-2016.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="669">
-            <caret line="282" column="0" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
+          <first_editor relative-caret-position="474">
+            <caret line="273" column="18" selection-start-line="273" selection-start-column="18" selection-end-line="273" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISOM2030/software_patent_cases.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="609">
+            <caret line="198" column="46" selection-start-line="198" selection-start-column="46" selection-end-line="198" selection-end-column="46" />
             <folding />
           </first_editor>
           <second_editor />
