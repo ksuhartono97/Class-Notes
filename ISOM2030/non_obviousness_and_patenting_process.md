@@ -80,9 +80,9 @@ The US lawsuit system on patents is encouraging the action of suing people over 
 - Utility patents: what we have been talking about since beginning of class
 - Design Patents (much less common historically:
     - Protects any novel, original (rather than nonobvious), and ornamental
-    (rather than useful) design for an articel of manufacture. Eg: Apple
+    (rather than useful) design for an article of manufacture. Eg: Apple
     can get a design on the Apple logo, the one where the apple has been bitten.
-    - This type of patent is similar to a copyrigt.
+    - This type of patent is similar to a copyright.
     - Has a shorter duration, 14 yeas long
 - Plant patents: for asexually reproduced plants only. Means that the plants are
 man-made, and cannot be found in nature growing by itself.

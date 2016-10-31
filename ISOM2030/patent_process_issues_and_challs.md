@@ -27,7 +27,7 @@ Examples of federal laws:
 - Military
 
 >State court has no authority on copyright and patents, so if you have any issue
->with copyrights and patents, you **have** to go to state court.
+>with copyrights and patents, you **have** to go to federal court.
 >However state law has authority over trademarks.
 
 Within court, there are two types of laws:
