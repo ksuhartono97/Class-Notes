@@ -47,15 +47,15 @@ Important: in the case above. The `<S>` next to the `const A&`
 must be there, it cannot be omitted.
 
 Containers in STL:
-1. Sequence Containers: examples : arrays
-    1. Represent linear data structures
-    2. Start from index/location 0
-2. Associative containers :
-    1. Non-sequential containers
-    2. Store key/value pairs: We store data as a pair, not standalone data, example 
+- Sequence Containers: examples : arrays
+    - Represent linear data structures
+    - Start from index/location 0
+- Associative containers :
+    - Non-sequential containers
+    - Store key/value pairs: We store data as a pair, not standalone data, example 
     `1: desmond`
-3. Container adapters
-4. "Near-containers" C-like pointer-based arrays
+- Container adapters
+- "Near-containers" C-like pointer-based arrays
 
 ###Sequence Containers
 Deque : Double-ended queue

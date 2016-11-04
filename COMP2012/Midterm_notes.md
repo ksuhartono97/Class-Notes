@@ -1,5 +1,50 @@
-#Const and Constness:
+#Make
+```
+g++ -o prog_name dependencies
+```
 
+Standard syntax:
+```
+TARGET : DEPENDENCIES
+    COMMAND TO CREATE TARGET
+```
+
+E.g.:
+```
+lamp-test : lamp-test.o lamp.o bulb.o
+    g++ -o lamp-test lamp-test.o lamp.o bulb.o
+```
+
+Don't forget preprocessor directives:
+- `#include`
+- `#ifndef`
+- `#define`
+- `#endif`
+
+#Const and Constness:
+Safety net, if a object shouldn't change make it `const`
+
+`const` member functions cannot modify the class object (and its data members)
+
+Syntax:
+```cpp
+int getA() const {};
+```
+As in put the `const` keyword after the parameter list.
+
+`const` and `const` pointers:
+
+Rule of thumb to this:
+- `const` to the left of the `*` refers to the **object**
+- `const` to the right of the `*` refers to the **pointer** 
+ 
+>Pointer-to-const pointing to a non-const object 
+>doesn't make the object itself become const
+
+`const` function arguments:
+- To prevent accidental modifications
+- So that you can pass both const and non-const objects to a function that requires
+`const` arguments. (if you remove the `const` it won't be able to receive `const` objects)
 
 #Constructors and Destructors
 
