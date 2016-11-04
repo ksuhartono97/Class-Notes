@@ -54,11 +54,9 @@ int main() {
 }
 ```
 
-Difference betwwen pointer and reference:
-1. _Pointer_ can point to **nothing** (NULL), but _reference_ is **always bound**
-to an object (pointer can be made uninitialized, but _reference_ has to be initialized)
-2. _Pointer_ can point to different objects at different times. _Reference_ is only 
-bound to **one** object.
+Difference between pointer and reference:
+1.  _Pointer_ can point to **nothing** (NULL), but _reference_ is **always bound** to an object (pointer can be made uninitialized, but _reference_ has to be initialized)
+2.  _Pointer_ can point to different objects at different times. _Reference_ is only bound to **one** object.
     > Question raised: What about when you PBR you assign different reference to different objects. Difference, when you PBR, at the end of function call, the name it was assigned to is **freed** thus allowing for a new object to be bound
 3. Name of *pointer* refers to the **pointer object**, *reference* always refers to **the object itself**
 

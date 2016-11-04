@@ -1,3 +1,6 @@
+#Const and Constness:
+
+
 #Constructors and Destructors
 
 Types of Constructors:
@@ -92,12 +95,24 @@ class A {
 };
 ```
 
+Within the template, <T> for anything in the class can be omitted. As can be
+seen in the example. We do not have to put `A<T>` but if we want to
+we can do it.
+
+However if you declare the template say in the `.h` file and then
+have the definition in the `.cpp` file, we **must** put both `template typename<T>`
+and the `A<T>`.
+
+>Extra, you can have a template class `.h` file do `#include ".cpp"` file so that
+>we can separate the implementation in `.h` from the one in `.cpp`. 
+
 ###Operator Overloading
 Operators that cannot be overloaded:
-- . 
+- .  the dot operator
 - :: the scope operator
-- ?: the ternary operator
-- .*
+- ?: the ternary operator or the conditional operator
+- .* access pointer
+- sizeof
 
 Also, you cannot change these properties of an operator
 - Arity : number of arguments it accepts
@@ -186,5 +201,4 @@ Some notes on static methods:
 - May be used even when there is **no** objects of the class
 - Can only use the **static** data members of the class
 - Cannot be `const` or `virtual` functions.
-
 
