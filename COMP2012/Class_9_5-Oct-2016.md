@@ -102,8 +102,8 @@ class B {
     B() {
         haha.setA(10);
         haha.setB(20);
-        haha.setA(30);
-        haha.setB(40);
+        hehe.setA(30);
+        hehe.setB(40);
     }
 };
        
@@ -138,7 +138,7 @@ int main() {
     A haha;
 }
 //the memory is not returned here, and then when the main exits
-//no one has the adress of the arr anymore. Memory leakage.
+//no one has the address of the arr anymore. Memory leakage.
 
 //So in class A definition:
 ~A() {
