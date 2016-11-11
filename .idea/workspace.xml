@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d78d41c-4b01-40c7-ae44-f8c05570f25c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP2012/Class_18_9-Nov-2016.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISOM2030/protecting_brands_trademark_business_issues.md" afterPath="$PROJECT_DIR$/ISOM2030/protecting_brands_trademark_business_issues.md" />
     </list>
     <ignored path="Class-Notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,12 +39,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="protecting_brands_trademark_business_issues.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ISOM2030/protecting_brands_trademark_business_issues.md">
+      <file leaf-file-name="Class_16_2-Nov-2016.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/COMP2012/Class_16_2-Nov-2016.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="549">
-                <caret line="142" column="34" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="34" />
+              <first_editor relative-caret-position="240">
+                <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -52,12 +52,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Class_16_2-Nov-2016.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMP2012/Class_16_2-Nov-2016.md">
+      <file leaf-file-name="Class_18_9-Nov-2016.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/COMP2012/Class_18_9-Nov-2016.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="240">
-                <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+              <first_editor relative-caret-position="533">
+                <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -101,6 +101,8 @@
         <option value="$PROJECT_DIR$/COMP2012/Class_17_4-Nov-2016.md" />
         <option value="$PROJECT_DIR$/COMP2012/Midterm_notes.md" />
         <option value="$PROJECT_DIR$/ISOM2030/protecting_brands_trademark_business_issues.md" />
+        <option value="$PROJECT_DIR$/COMP2012/Class_17_9-Nov-2016.md" />
+        <option value="$PROJECT_DIR$/COMP2012/Class_18_9-Nov-2016.md" />
       </list>
     </option>
   </component>
@@ -111,8 +113,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="46" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="709" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -155,8 +158,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -323,15 +326,16 @@
       <workItem from="1478158979449" duration="6944000" />
       <workItem from="1478193404812" duration="44000" />
       <workItem from="1478221857076" duration="11919000" />
-      <workItem from="1478496708550" duration="4044000" />
+      <workItem from="1478496708550" duration="4115000" />
+      <workItem from="1478679921543" duration="4031000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113158000" />
+    <option name="totallyTimeSpent" value="117260000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="46" width="1280" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -368,16 +372,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_7_28-Sep-2016.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1914">
-            <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_8_30-Sep-2016.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -815,23 +809,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_16_2-Nov-2016.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="240">
-            <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_11_12-Oct-2016.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2370">
             <caret line="158" column="67" selection-start-line="158" selection-start-column="67" selection-end-line="158" selection-end-column="67" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -842,6 +824,16 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="369">
             <caret line="233" column="20" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISOM2030/protecting_brands_trademark_business_issues.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="549">
+            <caret line="142" column="34" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="34" />
             <folding />
           </first_editor>
           <second_editor />
@@ -859,11 +851,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ISOM2030/protecting_brands_trademark_business_issues.md">
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_16_2-Nov-2016.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="549">
-            <caret line="142" column="34" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="34" />
+          <first_editor relative-caret-position="240">
+            <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_18_9-Nov-2016.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="533">
+            <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
             <folding />
           </first_editor>
           <second_editor />
