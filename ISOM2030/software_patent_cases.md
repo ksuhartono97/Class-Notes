@@ -197,3 +197,56 @@ Case is on the borderline of copyright law.
 
 Derivative work is a lot broader than what it was before. Meaning that
 software is becoming more protected over time.
+
+
+##Back to Laws
+Copyright: the single most international law.
+
+The idea that trademark lasts forever is generally well accepted.
+
+Compared to that the idea that copyright lasts 70-90 years, not as 
+generally accepted. As in there are people who reject it.
+
+Trademarks **last forever**
+
+Why do we need Trademark Law:
+- Purpose:
+- Benefit: attracts people to developing a strong brand or trademark
+because the stronger it is the more well protected it is
+- Cost of trademark law: giving a monopoly (giving someone
+the exclusive right to use something), can be costly if the brand
+is not trustworthy
+
+How long should a Trademark last? As long as the brand exists.
+
+Why is the duration different from copyright? Because, a copyright
+is expected to go into the public domain. A copyright is protected
+for a rather long time so that any creator of the copyrighted work can
+benefit from it.
+
+Trademark is similar to copyright.
+
+Requirement of registration and continuous use:
+- Why can't we protect a brand that is no longer used: Because if we do this, then
+we would run out of names. As in we would run out of words to
+represent a name.
+- We can protect a product Brand that is coming out, but is not yet in the market. 
+So, even if it isn't in the market yet you can protect it. However, you would need to 
+represent an active marketing of your product.
+- What is token use and why is this not permitted: Token use is a small use, in a small way, which is 
+not what you intend to actually use the product with.
+
+Copyrights and patents give a limited term monopoly on some
+products or processes.
+
+Long term successful businesses must develop strong loyalty and identity
+of brand and company to sustain superior profits. 
+- Continuous innovation alone is not enough
+
+As in, the companies need to establish themselves as trustworthy of creating
+quality product. Such that the customer knows this brand name and may be willing
+to try out the product even though it may not be as good as the previous innovation.
+
+The best way to market something is by selling it.
+
+
