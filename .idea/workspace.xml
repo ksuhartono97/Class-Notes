@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d78d41c-4b01-40c7-ae44-f8c05570f25c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP2012/Class_24_23-Nov-2016.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP2012/Class_25_25-Nov-2016.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP2012/Class_27_30-Nov-2016.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP2012/Class_26_29-Nov-2016.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP2012/Class_28_5-Dec-2016.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP2012/Final_notes.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Class-Notes.iws" />
@@ -28,12 +28,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Class_25_25-Nov-2016.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMP2012/Class_25_25-Nov-2016.md">
+      <file leaf-file-name="Class_24_23-Nov-2016.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/COMP2012/Class_24_23-Nov-2016.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="558">
-                <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+              <first_editor relative-caret-position="540">
+                <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -41,12 +41,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Class_27_30-Nov-2016.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/COMP2012/Class_27_30-Nov-2016.md">
+      <file leaf-file-name="Class_25_25-Nov-2016.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/COMP2012/Class_25_25-Nov-2016.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="528">
-                <caret line="169" column="77" lean-forward="false" selection-start-line="169" selection-start-column="77" selection-end-line="169" selection-end-column="77" />
+              <first_editor relative-caret-position="-326">
+                <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="18" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Class_26_29-Nov-2016.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/COMP2012/Class_26_29-Nov-2016.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="586">
+                <caret line="93" column="11" lean-forward="false" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -55,6 +68,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>height</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,6 +120,9 @@
         <option value="$PROJECT_DIR$/COMP2012/Class_24_23-Nov-2016.md" />
         <option value="$PROJECT_DIR$/COMP2012/Class_25_25-Nov-2016.md" />
         <option value="$PROJECT_DIR$/COMP2012/Class_27_30-Nov-2016.md" />
+        <option value="$PROJECT_DIR$/COMP2012/Final_notes.md" />
+        <option value="$PROJECT_DIR$/COMP2012/Class_28_5-Dec-2016.md" />
+        <option value="$PROJECT_DIR$/COMP2012/Class_26_29-Nov-2016.md" />
       </list>
     </option>
   </component>
@@ -112,9 +133,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="44" />
     <option name="width" value="1280" />
-    <option name="height" value="712" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -148,6 +168,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -176,7 +197,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,7 +205,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bitgraph-client" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/kristiansuhartono/Documents/GitHub/Class-Notes/COMP2012/Class_20_12-Nov-2016.md" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/kristiansuhartono/Documents/GitHub/Class-Notes/COMP2012/Class_24_23-Nov-2016.md" />
     <property name="FullScreen" value="true" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -320,17 +340,19 @@
       <workItem from="1480062683574" duration="7000" />
       <workItem from="1480062713868" duration="4499000" />
       <workItem from="1480494321239" duration="4768000" />
+      <workItem from="1480746462692" duration="4094000" />
+      <workItem from="1480823362283" duration="9069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160899000" />
+    <option name="totallyTimeSpent" value="174062000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="44" width="1280" height="712" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24384432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24225576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -367,9 +389,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/COMP2611/Unit_2_data_representation.md" />
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_7_28-Sep-2016.md" />
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_8_30-Sep-2016.md" />
     <entry file="file://$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md" />
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_7_28-Sep-2016.md" />
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_8_30-Sep-2016.md" />
@@ -395,7 +414,6 @@
     <entry file="file://$PROJECT_DIR$/ISOM2030/non_obviousness_and_patenting_process.md" />
     <entry file="file://$PROJECT_DIR$/ISOM2030/dmca_uslaws_impact_global_commerce.md" />
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_7_28-Sep-2016.md" />
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_17_4-Nov-2016.md" />
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_14_26-Oct-2016.md" />
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_13_19-Oct-2016.md">
       <provider editor-type-id="text-editor">
@@ -408,24 +426,7 @@
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_10_7-Oct-2016.md" />
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_9_5-Oct-2016.md" />
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_11_12-Oct-2016.md" />
-    <entry file="file://$PROJECT_DIR$/COMP2012/Midterm_notes.md" />
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_15_29-Oct-2016.md" />
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_16_2-Nov-2016.md" />
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_18_9-Nov-2016.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ISOM2030/protecting_brands_trademark_business_issues.md" />
     <entry file="file://$PROJECT_DIR$/ISOM2030/software_patent_cases.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -439,31 +440,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_19-11-Nov-2016.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_20_12-Nov-2016.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="3825">
-            <caret line="255" column="9" lean-forward="false" selection-start-line="255" selection-start-column="9" selection-end-line="255" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -502,7 +478,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1875">
             <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -513,6 +488,122 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1410">
             <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Midterm_notes.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="226" column="0" lean-forward="false" selection-start-line="226" selection-start-column="0" selection-end-line="247" selection-end-column="43" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_15_29-Oct-2016.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_18_9-Nov-2016.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_17_4-Nov-2016.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Final_notes.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="301">
+            <caret line="277" column="50" lean-forward="false" selection-start-line="277" selection-start-column="50" selection-end-line="277" selection-end-column="50" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_19-11-Nov-2016.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1140">
+            <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_20_12-Nov-2016.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3825">
+            <caret line="255" column="9" lean-forward="false" selection-start-line="255" selection-start-column="9" selection-end-line="255" selection-end-column="9" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_28_5-Dec-2016.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_25_25-Nov-2016.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-326">
+            <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="18" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_27_30-Nov-2016.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2565">
+            <caret line="171" column="45" lean-forward="false" selection-start-line="171" selection-start-column="45" selection-end-line="171" selection-end-column="45" />
             <folding />
           </first_editor>
           <second_editor />
@@ -530,22 +621,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_25_25-Nov-2016.md">
+    <entry file="file://$PROJECT_DIR$/COMP2012/Class_26_29-Nov-2016.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="558">
-            <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_27_30-Nov-2016.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="528">
-            <caret line="169" column="77" lean-forward="false" selection-start-line="169" selection-start-column="77" selection-end-line="169" selection-end-column="77" />
+          <first_editor relative-caret-position="586">
+            <caret line="93" column="11" lean-forward="false" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
             <folding />
           </first_editor>
           <second_editor />
