@@ -9,9 +9,14 @@ heights of the two child subtrees differ at most by one. Each node stores
 a height value, which refers to the height of the node.
 
 If at any moment the height difference differ by more than one, rebalancing
-is done to fix this problem.
+is done to fix this problem. (Usually happens due to insertion or deletion)
 
 Efficiency of any operation on an AVL tree always has **order of logn**.
+
+Rotation: operation to make a tree balanced. Types of rotation:
+- Single rotation
+- Double rotation
+
 
 
 Rebalancing done by **left** or **right** rotation. Or a combination of the two (left-right or right-left)
