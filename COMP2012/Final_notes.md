@@ -257,8 +257,51 @@ Some notes on static methods:
 - Kind of operations
 
 ###Iterators
+Iterators are generalized pointers. 
+
+For each kind of STL sequence, there is an iterator type:
+```cpp
+list<int>::iterator
+vector<string>::iterator
+deque<double>::iterator
+```
+
+Inside the `<>` is the type of whatever we store in the array.
+
+E.g. :
+
+```cpp
+vector<double> vv;
+//Input values here
+vector<double>::iterator it;
+it = vv.begin();
+vector<double>::iterator itit;
+itit = vv.end();
+
+for(vector<double>::iterator haha = it; haha != itit; haha++) {
+...
+}
+```
+
+Using `typedef` to rename an iterator:
+
+```cpp
+int main() {
+    vector<int> a;
+    vector<int>::iterator it;
+}
+//Long right, so:
+typedef vector<int>::iterator intIterator;
+typedef vector<int> an;
+
+int main() {
+    an a;
+    intIterator it;
+}
+```
 
 ###Algorithms
+
 
 ####Function pointers
 ```cpp
