@@ -74,7 +74,7 @@ first in the order in which they appear in the class!
 
 Member initialization list
 ```cpp
-X::X() : a(b), c(d){];
+X::X() : a(b), c(d){};
 ```
 
 
@@ -262,7 +262,7 @@ Some notes on static methods:
 
 ####Function pointers
 ```cpp
-int (*)(const void*, const void*);
+int (*) (const void* , const void*);
 ```
 Function name to be put after `*` in brackets, so `(*compare)` like that
 
