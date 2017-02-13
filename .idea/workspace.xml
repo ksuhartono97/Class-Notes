@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d78d41c-4b01-40c7-ae44-f8c05570f25c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COMP2012/Final_notes.md" afterPath="$PROJECT_DIR$/COMP2012/Final_notes.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP3311/2_relational_model.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/COMP3511/2_system_structures.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Class-Notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,12 +27,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Final_notes.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/COMP2012/Final_notes.md">
+      <file leaf-file-name="1_basic_os_concept.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/COMP3511/1_basic_os_concept.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="93">
-                <caret line="303" column="0" lean-forward="true" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
+              <first_editor relative-caret-position="548">
+                <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -38,12 +40,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Class_27_30-Nov-2016.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMP2012/Class_27_30-Nov-2016.md">
+      <file leaf-file-name="2_system_structures.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/COMP3511/2_system_structures.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2610">
-                <caret line="174" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+              <first_editor relative-caret-position="560">
+                <caret line="61" column="6" lean-forward="false" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1_er_model.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/COMP3311/1_er_model.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="780">
+                <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2_relational_model.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/COMP3311/2_relational_model.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="560">
+                <caret line="55" column="32" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -75,7 +103,6 @@
         <option value="$PROJECT_DIR$/ISOM2030/non_obviousness.md" />
         <option value="$PROJECT_DIR$/COMP2012/Class_10_7-Oct-2016.md" />
         <option value="$PROJECT_DIR$/COMP2012/Class_10_12-Oct-2016.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md" />
         <option value="$PROJECT_DIR$/COMP2012/Class_12_14-Oct-2016.md" />
         <option value="$PROJECT_DIR$/ISOM2030/dmca_uslaws_impact_global_commerce.md" />
@@ -107,6 +134,12 @@
         <option value="$PROJECT_DIR$/COMP2012/Class_23_21-Nov-2016.md" />
         <option value="$PROJECT_DIR$/COMP2012/Class_28_5-Dec-2016.md" />
         <option value="$PROJECT_DIR$/COMP2012/Final_notes.md" />
+        <option value="$PROJECT_DIR$/COMP3511/topic_1_placeholder.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/COMP3311/1_er_model.md" />
+        <option value="$PROJECT_DIR$/COMP3511/1_basic_os_concept.md" />
+        <option value="$PROJECT_DIR$/COMP3311/2_relational_model.md" />
+        <option value="$PROJECT_DIR$/COMP3511/2_system_structures.md" />
       </list>
     </option>
   </component>
@@ -117,9 +150,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="44" />
+    <option name="y" value="43" />
     <option name="width" value="1280" />
-    <option name="height" value="712" />
+    <option name="height" value="714" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -174,14 +207,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="COMP2012" />
+              <option name="myItemId" value="COMP3511" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Class-Notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Class-Notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="COMP3311" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,7 +283,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -330,18 +377,23 @@
       <workItem from="1480943211062" duration="2754000" />
       <workItem from="1480991167225" duration="13552000" />
       <workItem from="1481078816483" duration="90000" />
-      <workItem from="1481380688086" duration="433000" />
+      <workItem from="1481380688086" duration="961000" />
+      <workItem from="1485933058550" duration="2422000" />
+      <workItem from="1486008249056" duration="192000" />
+      <workItem from="1486008659315" duration="10000" />
+      <workItem from="1486100106767" duration="4490000" />
+      <workItem from="1486532095079" duration="5582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190891000" />
+    <option name="totallyTimeSpent" value="204115000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="44" width="1280" height="712" extended-state="0" />
+    <frame x="0" y="43" width="1280" height="714" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23907864" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23749007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -378,10 +430,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md" />
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_7_28-Sep-2016.md" />
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_8_30-Sep-2016.md" />
-    <entry file="file://$PROJECT_DIR$/COMP2012/Class_7_28-Sep-2016.md" />
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_7_28-Sep-2016.md" />
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_7_28-Sep-2016.md" />
     <entry file="file://$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md" />
@@ -398,7 +446,6 @@
     <entry file="file://$PROJECT_DIR$/ISOM2030/novelty_utility_patentability_innov.md" />
     <entry file="file://$PROJECT_DIR$/COMP2012/Class_8_30-Sep-2016.md" />
     <entry file="file://$PROJECT_DIR$/COMP2611/Unit_1_digi_circuit.md" />
-    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/ISOM2030/patent_process_issues_and_challs.md" />
     <entry file="file://$PROJECT_DIR$/ISOM2030/non_obviousness_and_patenting_process.md" />
     <entry file="file://$PROJECT_DIR$/ISOM2030/dmca_uslaws_impact_global_commerce.md" />
@@ -595,9 +642,8 @@
     <entry file="file://$PROJECT_DIR$/COMP2012/Final_notes.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="93">
-            <caret line="303" column="0" lean-forward="true" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
-            <folding />
+          <first_editor relative-caret-position="4590">
+            <caret line="306" column="6" lean-forward="false" selection-start-line="306" selection-start-column="6" selection-end-line="306" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>
@@ -608,6 +654,59 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2610">
             <caret line="174" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP3311/1_er_model.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="780">
+            <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP3311/2_relational_model.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="560">
+            <caret line="55" column="32" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP3511/1_basic_os_concept.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="548">
+            <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMP3511/2_system_structures.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="560">
+            <caret line="61" column="6" lean-forward="false" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
             <folding />
           </first_editor>
           <second_editor />
