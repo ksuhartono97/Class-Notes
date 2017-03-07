@@ -2,7 +2,7 @@
 
 The weakening foundations of the relationship:
 
-- Soviet hegemony thread weakened : known due to Soviets reaching out to fix relations with US and China
+- Soviet hegemony threat weakened : known due to Soviets reaching out to fix relations with US and China
 - Both sides had complaints about their trade relationship due to deficits. And also the US's surprise at China's ability to produce consumer products.
 - Growing concern about policies: religion ban, abortion, spiritual pollution, etc in China. Also fear of China's role in international arms war because they were selling missiles to other countries, causing US's security to start getting complicated.
 

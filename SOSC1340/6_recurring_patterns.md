@@ -32,7 +32,7 @@ Arnold Toynbee, said that there are patterns in history. They don't exactly repe
 
 Things that stayed constant in the relationship:
 
-- Fateful ties: each country things that the other is profoundly important to it one way or the other.
+- Fateful ties: each country thinks that the other is profoundly important to it one way or the other.
 - America's desire to change China : a story of failure, due to their exaggeration of their ability to change China.
 - Interest: similar interest of having access to China on equal terms. Also, favorable balance in Asia, America doesn't want to see Asia dominated by any power or hostile power.
 
