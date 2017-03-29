@@ -82,4 +82,41 @@ Can have multiple readers at a time. However, can only have one writer at a time
 
 The problem is when there is a reader inside and there are writers waiting. Since readers have a higher priority, the writers could be denied access continuously if readers keep on coming (starvation).
 
-Logic is, when you a reader enters, increment the read_count by 1\. If the read_count is 1 (the first reader) lock the rw_mutex so that there is no writer that comes in. If the reader leaves, then do -1 on the read_count. If the read_count is 0 (the last reader) it means that it is the last one, so signal the rw_mutex so that it is released.
+Logic is, when you a reader enters, increment the read_count by 1. If the read_count is 1 (the first reader) lock the rw_mutex so that there is no writer that comes in. If the reader leaves, then do -1 on the read_count. If the read_count is 0 (the last reader) it means that it is the last one, so signal the rw_mutex so that it is released.
+
+Cases:
+- Reader(s) inside : writer(s) **wait for rw_mutex**
+- One Writer inside : 1st reader **waits for rw_mutex** following readers (2, 3, 4, etc) are all stuck in **wait for mutex**.
+
+### Dining-Philosophers Problem
+Two states: hungry or thinking. When hungry grab two chopsticks to eat resources.
+
+Represents a form of problem that basically means how to handle multiple requests to shared resources.
+
+Solution:
+Semaphore for each chopstick, used as a mutex lock (binary semaphore). Guarantees mutual exclusion.
+
+Problem is deadlock, all philosophers get hungry at same time, grab chopstick at same time.
+
+#### Monitors
+An abstract data type that encapsulates data with a set of functions to operate on the data. Internal variables can only be accessed by code in the procedure.
+
+Only one process may be active within the monitor at a time - mutual exclusion.
+
+Operations on a condition variable:
+`Let condition x,y:`
+- `x.wait()` : suspends operation in the monitor, release the monitor for others
+- `x.signal()` : two cases
+  - There is a waiting process, then resume.
+  - There is no waiting process, nothing happens. Different from semaphore's signal because there is no increment. Meaning signal is just lost.
+
+  Complications:
+  P invokes signal, while Q is waiting. If Q is resumed then P must wait, cannot be in monitor simultaneously.
+
+  Solutions:
+  - Signal and wait: P waits until Q leaves monitor or waits for another condition.
+  - Signal and continue: Q waits until P leaves, P continues execution or waits for another condition.
+
+Thus we can use monitors to solve dining philosophers problem.
+
+If a philosopher is hungry, then check both neighbors and see if they are eating or not. If they aren't then I can pick up two chopsticks. Upon finishing eating, put down chopsticks and check whether neighbors need to eat or not. If they want to eat, then they will eat. (A signal is sent to awaken waiting processes, if there are no waiting processes, then nothing happens)
