@@ -88,6 +88,16 @@ Upon inquiry if request can be granted or not, first check if the request passes
 
 Allow system to enter deadlock states, detect it and recover.
 
+>Important concept: This system will always have a possibility of a deadlock happening, unlike the previous two
+
+Note that we still cannot completely detect the deadlock, only can detect the safe or unsafe situations. Because we do not know the sufficient conditions of a deadlock happening.
+
+For deadlock detection algorithms, check lecture notes.
+
+Upon detection of deadlock (system is unsafe), how to recover from deadlock, two possibilities:
+- Abort all deadlocked processes : Make all the processes release their resources. No more cycles, no more deadlocks. But very expensive.
+- Abort one process at a time until the deadlock cycle is eliminated : For some processes drop them (release some resources to allow the deadlock to eliminate itself)
+
 ### Ignore
 
 Don't care about deadlocks, pretend it never occur in the system. Used by most OSes like UNIX.
