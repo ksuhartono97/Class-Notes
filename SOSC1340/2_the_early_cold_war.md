@@ -29,7 +29,7 @@ Korean War caused US and China to be in bloody war, even though the final result
 **Containment**: Political and military capability to prevent communist insurgencies from using military forces to come into power. Done by signing military treaties and security treaties with countries other than China. Important treaties:
 
 - With Japan
-- With South Korean
+- With South Korea
 
 These treaties do not oblige the US to do anything. Only one treaty did, even then it existed only to prevent the domino effect of country after country falling to communism power.
 

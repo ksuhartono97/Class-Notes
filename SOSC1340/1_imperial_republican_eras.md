@@ -1,6 +1,6 @@
 # The Imperial and Republican Eras (7 February 2017)
 
-Trump is ignoring the Xi Jinping(the president of China), haven't talked since inauguration.
+Trump is ignoring Xi Jinping(the president of China), haven't talked since inauguration.
 
 Alternative facts: **Facts** that are contradictory, but are nevertheless still facts. They take a great deal to judge and produce very complicated patterns.
 
