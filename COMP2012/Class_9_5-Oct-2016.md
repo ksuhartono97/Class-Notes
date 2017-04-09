@@ -1,20 +1,19 @@
-#Continuing on Constructor
+# Continuing on Constructor
 
 All constructors have the same name, because C++ has function overloading
 
->Side fact: Also known as method overloading in Java
+> Side fact: Also known as method overloading in Java
 
-Constructors are often overloaded, so that users can pass different parameters to construct 
-a new object.
+Constructors are often overloaded, so that users can pass different parameters to construct a new object.
 
 > The signs +, - ,\ are all functions in C++, they have different uses because they are overloaded
 
+## Function Default Arguments
 
-##Function Default Arguments
-```cpp
+```c++
 class A{
     public:
-        void func (int a, int b, int c) { 
+        void func (int a, int b, int c) {
             // Suppose you only have 2 default values for the variables
             // Where should you put them?            
         }
@@ -25,11 +24,11 @@ class A{
 };
 ```
 
->Rule : In a function default values should be given to the arguments **on the right** first
+> Rule : In a function default values should be given to the arguments **on the right** first
 
-```cpp
+```c++
 class A{
-    private: 
+    private:
         int a;
         int b;
         int c;
@@ -45,23 +44,21 @@ class A{
 
 Generally using default function arguments is more preferrable to using function overloading
 
-A parameter can only have its `default argument` specified only **once** in a file, usually in the 
-header, not in the function definition. If done twice, there will be an error. Because it is redundant.
+A parameter can only have its `default argument` specified only **once** in a file, usually in the header, not in the function definition. If done twice, there will be an error. Because it is redundant.
 
-`default arguments` are usually specified in the .h file is so that other people knows exactly how many values 
-other people who are going to use the function need to give it.
+`default arguments` are usually specified in the .h file is so that other people knows exactly how many values other people who are going to use the function need to give it.
 
-##Member Initialization List
+## Member Initialization List
 
-``` cpp
+```c++
 class A{
-    private: 
+    private:
         int a;
         int b;
         int c;
     public:
         A() : a(1), b(2), c(3) //This is a member initialization list
-        { 
+        {
             //Does the same thing as:
             //a = 1;
             //b = 2;
@@ -69,24 +66,21 @@ class A{
         }      
 };
 ```
-Member initialization list is only available for use in the `constructor`.
-It is not allowed to be put in member functions!
 
-The reason why this is needed is because the mechanism of creation and initialization is different.
-Without the member initialization list, you need to:
+Member initialization list is only available for use in the `constructor`. It is not allowed to be put in member functions!
+
+The reason why this is needed is because the mechanism of creation and initialization is different. Without the member initialization list, you need to:
+
 - Create the data members first, e.g.: `int a`, `int b`, `int c`
-- After all of them are created, put in data members 
+- After all of them are created, put in data members
 
 With the member initialization list:
-- Create the data members and assign the value at the same time, 
-i.e. create a variable then assign the value directly.
 
-Why is this important? Say one of your data member is a `const`, then the normal method,
-using assignment, would not work. As for a `const` variable it needs to get its value
-when its created. Thus you would need the member initialization list. Another example that 
-needs this is if you have reference variables (`&`).
+- Create the data members and assign the value at the same time, i.e. create a variable then assign the value directly.
 
-```cpp
+Why is this important? Say one of your data member is a `const`, then the normal method, using assignment, would not work. As for a `const` variable it needs to get its value when its created. Thus you would need the member initialization list. Another example that needs this is if you have reference variables (`&`).
+
+```c++
 class A {
     int a,b;
     public:
@@ -106,10 +100,10 @@ class B {
         hehe.setB(40);
     }
 };
-       
+
 // Is it better to use member initialization here?
 // Yes, because here, the default construction calls are redundant
-// So: 
+// So:
 class B{
     A haha;
     A hehe;
@@ -119,15 +113,16 @@ class B{
 ```
 
 Data member initialization list should be used in initializing:
+
 - `const` data members
 - Reference data members
 - Other objects
 
-#Destructors
-When you define anything with `new` it will get memory from the heap
-of your computer. 
+# Destructors
 
-```cpp 
+When you define anything with `new` it will get memory from the heap of your computer.
+
+```c++
 class A  {
     int* arr;
     A() {
@@ -143,16 +138,11 @@ int main() {
 //So in class A definition:
 ~A() {
     delete [] arr;
-} 
+}
 ```
 
-To prevent this thing from happening, we need the destructor
-which is called when we call `delete` on the object or when the 
-object is about to be destroyed, e.g. : leaving the function.
+To prevent this thing from happening, we need the destructor which is called when we call `delete` on the object or when the object is about to be destroyed, e.g. : leaving the function.
 
-You can only have one destructor, as we are not gonna pass any values
-to the destructor, then there is no way to overload a destructor.
+You can only have one destructor, as we are not gonna pass any values to the destructor, then there is no way to overload a destructor.
 
 If no destructor is defined, C++ will define a destructor for you.
-
-

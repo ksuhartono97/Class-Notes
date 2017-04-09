@@ -1,39 +1,39 @@
-#Class 8
+# Class 8
 
-###Continuing on constructors
+## Continuing on constructors
 
 Surprise implicit conversion:
-```cpp
+
+```c++
 class Word {
     ...
     public:
         Word(char c) {...}
         Word (const char* s) {...}
         void print() const {...}
-    
+
 }
 
 void print_word (Word x) {x.print();}
 int main () {
     print_word("Titanic"); //String will be converted to Word by conversion
     print_word('A'); //Char will be converted to Word by conversion
-    
+
     //Why is this a surprise?
     //Because it is converted using the constructors without being asked to
     //Type conversion from string and char to word
-    
+
     return 0;
 }
 ```
 
-How to prevent surprises like this? Use the keyword `explicit`. It will disallow
-implicit conversion with the constructor.
+How to prevent surprises like this? Use the keyword `explicit`. It will disallow implicit conversion with the constructor.
 
-**Copy Constructors** : a constructor that can use an object of its type
-and use that object to initialize its data members.
+**Copy Constructors** : a constructor that can use an object of its type and use that object to initialize its data members.
 
-Ex : 
-```cpp
+Ex :
+
+```c++
 class A {
     private:
         int a;
@@ -49,25 +49,19 @@ class A {
 
 Can also use `=` to pass an object, however this is an implicit call of the constructor.
 
-If the return type of a function is the object (of the same class type), then you want to create a new object
-with that returned value, it will call the copy constructor.
+If the return type of a function is the object (of the same class type), then you want to create a new object with that returned value, it will call the copy constructor.
 
-If there is no copy constructor is defined, C++ **will supply  a default copy
-constructor** for the class. In the event that you try to create a new object by
-copying, the default copy constructor would do **memberwise** assignment.
-Meaning that it will copy all the data members of the object given to it to 
-the new object.
+If there is no copy constructor is defined, C++ **will supply a default copy constructor** for the class. In the event that you try to create a new object by copying, the default copy constructor would do **memberwise** assignment. Meaning that it will copy all the data members of the object given to it to the new object.
 
->If you do not have constructors at all in your class, C++ compilers will provide you with **2 constructors**. The default constructor and a copy constructor.
+> If you do not have constructors at all in your class, C++ compilers will provide you with **2 constructors**. The default constructor and a copy constructor.
 
-Copying in this constructor works even for array members. However they will be sharing the array.
-More commonly known as *shallow* copying (if the data member is a pointer or dynamic). 
+Copying in this constructor works even for array members. However they will be sharing the array. More commonly known as _shallow_ copying (if the data member is a pointer or dynamic).
 
-Important note: If all class data types are primitive, you can utilise the default
-copy constructor. Else define your own copy constructor is better.
+Important note: If all class data types are primitive, you can utilise the default copy constructor. Else define your own copy constructor is better.
 
 Example of creating your own copy constructor to prevent such an error:
-```cpp
+
+```c++
 class A {
     private:
         int* arr;
@@ -91,8 +85,9 @@ int main () {
 ```
 
 Exceptions:
-```cpp
-    A (A& mrHappy) {...}
+
+```c++
+A (A& mrHappy) {...}
     //not recognized as copy constructor
     //default constructor will be given
     //However which one will get called??
@@ -102,8 +97,8 @@ Exceptions:
     //This is an error, you don't get a constructor
 ```
 
-```cpp
-    A (const A mrHappy) {...}
+```c++
+A (const A mrHappy) {...}
     //Error
     //impossible situation
     //you haven't created the object but you put const
