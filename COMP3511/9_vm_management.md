@@ -28,3 +28,37 @@ Actually signify the existence of the page table entry in the memory. Doesn't re
 During access to an address that is inside the page (not the whole page, just that single address). And get a trap. This is a page fault.
 
 Handle it by bringing the missing page back into the memory, and then reset the page table and instruction.
+
+### Thrashing
+
+A process is busy with swapping pages in and out.
+
+The long term scheduler might bring in more processes. But if system is in thrashing status, it will bring down CPU utilization very quickly to a low number.
+
+#### Why does demand paging work
+
+Locality model: only working on a small number of documents.
+
+Thrashing can still occur if the size of the locality is larger than the total memory size.
+
+Therefore, we need to estimate the size of the locality.
+
+##### Working-set model
+
+You have a working-set window that moves along the program, this window encompasses a certain number of instructions that form a principle of locality in the program.
+
+Size of the window is a fixed number.
+
+Working-set itself is a variable that changes over time.
+
+However, this has too much overhead, because every memory access/instruction access, we need to update the moving window. Thus we have to approximate, instead of all the instructions in the working-set, only interrupt in a smaller frequency.
+
+##### Page-fault frequency
+
+Establish an acceptable page fault frequency.
+
+##### Prepaging
+
+Prepage all or some of the pages a process will need.
+
+However, there is a risk associated with this, if we don't use the pages then the prepaged pages are useless, wasting I/O and memory.
