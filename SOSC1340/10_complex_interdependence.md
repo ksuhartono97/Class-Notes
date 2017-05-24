@@ -43,13 +43,13 @@ Deng Xiaoping's policy of return and opening: gaige kaifang (1978 late), pragmat
 - Restriction on inbound investment:
 
   - Technology transfer requirement: need to give an advanced technology to be able to invest.
-  - Expert requirements: if you want to invest, you have to create an export complensation for us (reciprocity)
+  - Export requirements: if you want to invest, you have to create an export compensation for us (reciprocity)
   - Restrictions on forms of ownership
+  - Excluded sectors: no trade/investments on certain sectors.
 
-- Excluded sectors: no trade/investments on certain sectors.
-- Import-substitution strategy & foreign exchange controls:buy at home" strategy
+- Import-substitution strategy & foreign exchange controls : buy at home" strategy
 
-Constraints are being relaxed overtime::
+Constraints are being relaxed overtime:
 
 - Clinton administration's decision to delink MFN status renewal from human rights concerns, allowed renewal to be guaranteed granting stability for businesses.
 - Increased opportunities for direct investments
