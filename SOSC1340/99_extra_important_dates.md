@@ -1,6 +1,7 @@
 # Special Notes
 
 ## Important Info
+
 - 3M : Merchants, Missionary, Military
 - 3 Presidents who were inspired by China : Thomas Jefferson, Benjamin Franklin, James Madison
 - Elements of Cold War : Liberation, Containment, Isolation, Challenges to US policy
@@ -30,6 +31,7 @@
 - Possible Content of security and diplomacy track : conventional security (Taiwan), cooperative security (non-proliferation), human security (terrorism), societal security (resource security, climate security)
 
 ## Important Dates, in chronological order:
+
 - 1905 : Chinese boycott
 - 1944-47 : Dixie Mission
 - 1944-45 : Hurley Mission
