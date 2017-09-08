@@ -5,23 +5,29 @@
 Switches and routers do not understand the application, only forward the data (as packets)
 
 IETF : standardizing internet communication.
+
 ## What are protocols
+
 A syntax with which internet services can use to communicate with each other.
 
 ## Access networks
+
 Cable network or DSL network, services that you can subscribe to. Usually for **Residential** type networks.
 
 Ethernet : **enterprise** access networks
 
-Wireless access networks (mobile) : commonly using the IEEE standard which is the most successful internet standard. There are two types, **Wireless LANs** and **wide-area wireless access**. *Wireless LANs* are usually from routers within a certain building or area. And the *wide-area wireless access* is much slower compared to wireless LANs, however, the connection area is much larger. Because the users are expected to be moving around at a high rate when using this type of wireless access.
+Wireless access networks (mobile) : commonly using the IEEE standard which is the most successful internet standard. There are two types, **Wireless LANs** and **wide-area wireless access**. _Wireless LANs_ are usually from routers within a certain building or area. And the _wide-area wireless access_ is much slower compared to wireless LANs, however, the connection area is much larger. Because the users are expected to be moving around at a high rate when using this type of wireless access.
 
 ## Hosts
+
 The user that sends the data through the networks.
 
 ## Network Cores
+
 Need a core network to connect all the routers.
 
 ### Packet Switching
+
 Internet's design in based on packet switching. That is information that wants to be transmitted is broken down into packets. These packets need to be able to be transported to the target router. How? By **receive and forward**, that receives a packet and pass it to the next router. A router will receive a data packet, store it, and pass it to the next.
 
 > Note, received data in PACKETS not BITS
@@ -33,12 +39,15 @@ Too much traffic can cause the router to be overwhelmed, as it is unable to push
 Packet queueing and loss are caused by packet switching.
 
 ### Routing and Forwarding
+
 A routing algorithm will figure out the route that a packet will need to take. And forwarding will move the packet from the input part of the router to the output that the algorithm specified.
 
 ### Circuit switching
+
 A certain packet will be allocated to a certain circuit, so all packets from a certain source to a certain destination will all pass through the same circuit. Each circuit has its own dedicated resources. Creates resource utilization problems.
 
 ### FDM (frequency division multiplexing) and TDM (time division multiplexing)
+
 Frequency division means that each user gets it's own frequency.
 
 Time division multiplexing means that you can use a certain frequency at a certain time. As a time changes, frequency changes. If you want to use a certain frequency you have to wait until you get it again.
@@ -50,7 +59,33 @@ In circuit switching, the router can only support a certain number of concurrent
 However, packet switching is great for bursty data. For constant streams of data, circuit switching is better. So how can we achieve circuit like behaviour? Answer: no perfect solution for today's internet. The current solution is to increase the bandwidth, by giving you more internet speed.
 
 ### Network of networks
+
 Content provider networks, decided instead of paying ISPs to transmit their traffic, they built their own network, bypassing the tier 1 and tier 2 ISPs.
 
 ## Delay, Loss, Throughput in networks
-Queuing delay for each router is different as it depends on router's congestion level. Transmission delay depends on router capacity. Propagation delay depends on distance. 
+
+Queuing delay for each router is different as it depends on router's congestion level. Transmission delay depends on router capacity. Propagation delay depends on distance.
+
+## Protocol layers
+
+Networks is a complex system, we need layers so we can split up the problem into smaller layers. Every single layer needs to handle its own business, provide something to the upper layer and have some sort of demand from the lower layer.
+
+Layering is not necessarily the best solution. It is a very efficient design for today's internet due to the importance of scalability.
+
+## Network Security
+
+There are a lot of points where packets can be taken during the sending of a packet in a network. Internet was designed to be efficient and fast, not really much security put in place.
+
+Malware can get in host from worm and viruses. Worms are worse than virus as it is able to replicate automatically. These malware come into the system and collect information about everything you do.
+
+### DoS (denial of service)
+
+Infected computers can be added to a botnet that will be used for DoS. The way DoS works is by spamming the network with fake traffic, taking away all the resources of the networks. Making the site unable to give any resources.
+
+### Packet Sniffing
+
+Shared media (wireless, internet) means there is a user capability to hear and listen to all the traffic moving out.
+
+### IP Spoofing
+
+Packet sniffing is a problem because it can cause IP spoofing, where a packet is sent with a different IP address. Because we know the packet sent, we can resend it from a different IP address.
