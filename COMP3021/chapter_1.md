@@ -26,7 +26,7 @@ In java the variable you put in the parentheses of an if statement **MUST** be a
 
 In java datatypes other than the 8 primitive datatypes are reference types. Which means that it is similar to a pointer in C++.
 
-```
+```java
 //C++
 Haha* p;
 
@@ -69,13 +69,18 @@ System.out.println(a+b+"Value is"); //Gives 8Value is
 ```
 
 ## Scanners
+
 When finished with the scanner, must close the scanner or there will be error.
 
 ## Class
+
 No access keyword in Java means that it's access will be default.
 
+Java allows initialization on declaration. (inline initialization, not available in C++)
+
 C++ allows grouping of data members, in Java it is not allowed due to the existence of default.
-```
+
+```java
 //legal in c++ not legal in java
 class A{
   public:
@@ -93,7 +98,7 @@ class A{
 
 No member initialization list in Java.
 
-```
+```java
 //Illegal in C++
 class A{
   public:
@@ -111,4 +116,70 @@ class A{
 
 No constant member functions in Java.
 
-> meaning Java is simpler
+> Conclusion: Java is simpler
+
+### Constructors
+
+C++ gives default copy constructor, in Java there is **no default copy** constructor and **doesn't support implicit call of copy constructor**.
+
+```java
+//Assume there is a persons class defined
+
+Person p1 = new Person();
+Person p2 = p1; //Illegal in java
+Person p3(p1); //Legal in java, proper way to call copy constructor.
+```
+
+### `this` keyword
+
+Is a reference variable in Java. Must use the `.` operator instead of `->` operator.
+
+No default parameters in Java.
+
+### Separation of class definition and implementation
+
+Cannot separate in Java. Must be in file.
+
+> C++ is more flexible in this case
+
+### Inheritance
+
+In java only **_single_** inheritance can be done, as in you can only inherit from one class. Use `extends` to inherit in Java.
+
+Use `super` to call the constructor of the base class to initialize the base class data members. Not only constructor, you can use super to call any base class methods.
+
+### Polymorphism
+
+Java's default behavior is to do dynamic binding. So if you morph a derived class into a base class, the method called is always the derived class's method.
+
+### Const-ness
+
+Java uses `final` instead of `const`.
+
+```java
+final double PI = 3.14159; //is similar to const double PI = 3.14159 in C++
+```
+
+However, const member function is not similar to `final` member function. In Java, a `final` member function **cannot** be overridden. As in when you inherit it, the function with `final` cannot be replaced by the derived class with their own method. Unlike C++ where `const` basically means the return value of the function is a `const`.
+
+## Other notes
+
+Big O object is the ancestor of all the classes.
+
+```java
+  public class Haha {
+    //this class by default inherits the big O object, but you can
+    //still inherit from another.
+  }
+```
+
+```java
+Person person = new Person(); // initialization of an object.
+
+for(datatype element : list) {
+
+} //For Each syntax
+
+int[] arr = new int[100]; //legal even though you're not allowed to do new int.
+int arr[] = new int[100]; //equivalent to topside
+```
