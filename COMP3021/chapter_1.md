@@ -60,7 +60,7 @@ Java doesn't support the use of operators for console I/O. Meanwhile C++ has `>>
 
 String concatenation with `+` operator only. Remember also operator precedence, left to right for this.
 
-```
+```java
 int a = 6;
 int b = 2;
 
