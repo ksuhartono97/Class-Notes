@@ -58,3 +58,57 @@ Two types, persistent and non-persistent http.
 > Non persistent design existed only in the old days. Now usually only persistent http is used.
 
 RTT (Round trip time) : time taken for a packet to travel from client to server and back.
+
+### Caching
+> Recall : if arrival is larger than going rate, will cause delay to get longer and longer eventually becoming infinity.
+
+Higher access link rate means lower access link utilization which also means higher internet speed. However, expensive cost
+
+Solution is to use a cache, to handle repeated accesses of certain data. Basically allowing a reduction in the amount of data flow and the access link utilization. For example a 40% cache hit rate will reduce traffic rate through the access link to 60%.
+
+> The higher the cache hit rate, the better your performance.
+
+Using a proxy server architecture to improve performance. Conditional get is different from normal get request.
+
+The cache will be put with the proxy server. The proxy server itself is both client and server. When talking to the client the proxy acts as a server, and the server itself is acting as a client when asking for content from the server. The proxy can get either 304 or 200 response.
+
+## FTP
+Control related parts will get sent through port 21, authentication, filesystem navigation, and others goes here. After obtaining authorization and location of the file, we setup another port at port 20 for real data transmission.
+
+From the application point of view, we are using 2 network protocols to achieve the applications requirement. This is called as the out-of-band design. (One band for control, one band for data, causing the control communication to not interact the data transmission)
+
+## Electronic Mail
+Components:
+- **User agent** is the interface with which the user interacts.
+- **Mail servers** where messages are stored, there are numerous servers in the world.
+- **SMTP (Simple Mail Transfer Protocol)** this is the protocol that allows the servers to talk to which other in order to deliver the mail.
+
+The mail server has two components, the user mailbox (yellow colour in the slides) and the outgoing message queue (green in the slides).
+
+Mailbox, for every user, it contains the incoming message for the user. Message queue will have the messages that needs to be sent to another server. So the interaction is between the message queue of one server with the mailbox of another server. Again the server can serve as a client and server, depending on what the server needs to do. When sending a message, serves a client, and the receiver serves as a server.
+
+### SMTP
+Standardized by ITF, using port 25.
+
+Say Alice wants to send a message to Bob, Alice's mailserver has to open a protocol (acting as a client) to Bob server's mailbox. Bob's mailserver will receive and put the message in Bob's mailbox. At this point the SMTP protocol is finished.
+
+Is a push based connection (setup a connection and send data, as compared to HTTP who is a pull based connection where you setup a connection and get data).
+
+### Mail Access Protocol
+User Agents access the messages from the server using MAPs.
+
+Types:
+- POP
+- IMAP
+- HTTP
+
+## DNS
+The protocol itself is the infrastructure of internet that is implemented on application level.
+
+IP address is too hard to remember, just a set of numbers that are always changing, that is why there are user friendly names for humans.
+
+There are 13 root name servers worldwide, there is 1 root server in Asia, which is in Japan.
+
+Most details are put in the authoritative DNS servers, which is maintained by organization or SP.
+
+Typical topology: An endhost trying to visit another location. The requesting host tries to find out something, so then there will be a dns request to the umass address. So first, you will talk to the local server. If the local server doesn't know anything about the address that you asked, then it will send a request to the root DNS server.
