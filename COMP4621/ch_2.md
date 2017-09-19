@@ -111,4 +111,46 @@ There are 13 root name servers worldwide, there is 1 root server in Asia, which 
 
 Most details are put in the authoritative DNS servers, which is maintained by organization or SP.
 
-Typical topology: An endhost trying to visit another location. The requesting host tries to find out something, so then there will be a dns request to the umass address. So first, you will talk to the local server. If the local server doesn't know anything about the address that you asked, then it will send a request to the root DNS server.
+### Iterative Query
+
+Typical topology: An endhost trying to visit another location. The requesting host tries to find out something, so then there will be a dns request to the umass address. So first, you will talk to the local server. If the local server doesn't know anything about the address that you asked, then it will send a request to the root DNS server. The local server will then get a result from root DNS that sends it to TLD DNS, the TLD will then tell you that the authoritative server that knows who umass address. So lastly, the local server contacts that server and get the address.
+
+> Iterated query, the server you connect replies with the name of the server to contact. As in the current server doesn't know about your query, the server will send a different server to contact.
+
+### Recursive Query
+Instead of passing which server to contact, each contacted server will contact the server that is needed to contact. Until it finally finds the address that needed to be found, then it will pass the result back.
+
+Once any name server learns mapping, it caches mapping.
+
+DNS mapping only exists for a period of time.
+
+> Conclusion about DNS is basically an endhost tries to visit location. Contacts a local server. Local server know or doesn't know the address of location. If know return address, if don't know contact root server, and then figure out the address by multiple contacts. When you have the address, create a mapping for the address and save it in the cache for future reference to ease burden from next connections.
+
+### Attacking DNS
+- Man in middle attack : 2 nodes trying to communicate. Node A sends something, node B sends a reply. In the internet we want to confirm whether Node A is really sending and node B is really replying (preventing IP spoofing). However, there is a person between the two nodes that are intercepting all the communications and forwarding to the two nodes, making them believe they are communicating with each other. Meanwhile the middle node gets all the information.
+- DNS Poisoning : send bogus replies to DNS server, which caches the fake replies, making a request link to somewhere else.
+
+## P2P Applications
+Bottleneck of file transfers are clients with the lowest downloading speed. Or the server can be the bottleneck (unlikely, most of the time the client is the bottleneck) due to low uploading speed. And the last possible bottleneck is the server and users working together to upload NF files (N items of F filesizes).
+
+### Napster
+Users need to install application, after installation, report status to central directory server (if you are on or not, what kind of files in disk space, these are uploaded to server). Directory server will check who is online and what sort of content is available in the disk space. Then get the client with highest bandwith and smallest delay with the user that wants to download, and then make the user download from that client. The central server only maintains a list of who has a certain file.
+
+User wants to find out who has something, send request to server. Then server will inform you with the best user that can serve you. Then user will contact the server user and download the item. Scalability of the system is nice since all traffic happens between users.
+
+Issue with Napster is legal issue. As it means that if at least one user is paying for a certain mp3 file, any other user can access the file for free.
+
+This is a server peer to peer.
+
+### Gnutella
+Searching in a peer to peer situation is extremely tough. Due to the propagating query. Even though a peer has already returned the answer, other peers may not be able to find out this information. So the issue with P2P search is it is not comprehensive (might not get result) and inefficiency.
+
+This is pure peer to peer.
+
+### KaZaA
+Hierarchical structure. Basically a super-peer system. There are super peers that act as servers (like in Napster system) if this super node knows of the information, then it will inform the requesting node. If not the super node will communicate with other super nodes in a pure peer to peer way (like in Gnutella).
+
+> In cluster, like napster, among super nodes, like Gnutella.
+
+### BitTorrent
+Strategy is if you contribute more, you have a higher chance to get served better. 

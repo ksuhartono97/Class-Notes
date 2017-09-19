@@ -1,7 +1,9 @@
 # SCM & Git
+
 Version control, so you can have backups as disk is cheap.
 
 ## SVN
+
 `svn update` and `svn commit` are the two most important commands in SVN.
 
 - `svn update` similar to `git pull`
@@ -10,4 +12,5 @@ Version control, so you can have backups as disk is cheap.
 - `svn commit` is `git push`
 
 ## Git
+
 You should know the git workflow already if you're looking at this.
