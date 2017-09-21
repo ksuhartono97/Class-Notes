@@ -60,6 +60,7 @@ Two types, persistent and non-persistent http.
 RTT (Round trip time) : time taken for a packet to travel from client to server and back.
 
 ### Caching
+
 > Recall : if arrival is larger than going rate, will cause delay to get longer and longer eventually becoming infinity.
 
 Higher access link rate means lower access link utilization which also means higher internet speed. However, expensive cost
@@ -73,12 +74,15 @@ Using a proxy server architecture to improve performance. Conditional get is dif
 The cache will be put with the proxy server. The proxy server itself is both client and server. When talking to the client the proxy acts as a server, and the server itself is acting as a client when asking for content from the server. The proxy can get either 304 or 200 response.
 
 ## FTP
+
 Control related parts will get sent through port 21, authentication, filesystem navigation, and others goes here. After obtaining authorization and location of the file, we setup another port at port 20 for real data transmission.
 
 From the application point of view, we are using 2 network protocols to achieve the applications requirement. This is called as the out-of-band design. (One band for control, one band for data, causing the control communication to not interact the data transmission)
 
 ## Electronic Mail
+
 Components:
+
 - **User agent** is the interface with which the user interacts.
 - **Mail servers** where messages are stored, there are numerous servers in the world.
 - **SMTP (Simple Mail Transfer Protocol)** this is the protocol that allows the servers to talk to which other in order to deliver the mail.
@@ -88,6 +92,7 @@ The mail server has two components, the user mailbox (yellow colour in the slide
 Mailbox, for every user, it contains the incoming message for the user. Message queue will have the messages that needs to be sent to another server. So the interaction is between the message queue of one server with the mailbox of another server. Again the server can serve as a client and server, depending on what the server needs to do. When sending a message, serves a client, and the receiver serves as a server.
 
 ### SMTP
+
 Standardized by ITF, using port 25.
 
 Say Alice wants to send a message to Bob, Alice's mailserver has to open a protocol (acting as a client) to Bob server's mailbox. Bob's mailserver will receive and put the message in Bob's mailbox. At this point the SMTP protocol is finished.
@@ -95,14 +100,17 @@ Say Alice wants to send a message to Bob, Alice's mailserver has to open a proto
 Is a push based connection (setup a connection and send data, as compared to HTTP who is a pull based connection where you setup a connection and get data).
 
 ### Mail Access Protocol
+
 User Agents access the messages from the server using MAPs.
 
 Types:
+
 - POP
 - IMAP
 - HTTP
 
 ## DNS
+
 The protocol itself is the infrastructure of internet that is implemented on application level.
 
 IP address is too hard to remember, just a set of numbers that are always changing, that is why there are user friendly names for humans.
@@ -118,6 +126,7 @@ Typical topology: An endhost trying to visit another location. The requesting ho
 > Iterated query, the server you connect replies with the name of the server to contact. As in the current server doesn't know about your query, the server will send a different server to contact.
 
 ### Recursive Query
+
 Instead of passing which server to contact, each contacted server will contact the server that is needed to contact. Until it finally finds the address that needed to be found, then it will pass the result back.
 
 Once any name server learns mapping, it caches mapping.
@@ -127,13 +136,16 @@ DNS mapping only exists for a period of time.
 > Conclusion about DNS is basically an endhost tries to visit location. Contacts a local server. Local server know or doesn't know the address of location. If know return address, if don't know contact root server, and then figure out the address by multiple contacts. When you have the address, create a mapping for the address and save it in the cache for future reference to ease burden from next connections.
 
 ### Attacking DNS
+
 - Man in middle attack : 2 nodes trying to communicate. Node A sends something, node B sends a reply. In the internet we want to confirm whether Node A is really sending and node B is really replying (preventing IP spoofing). However, there is a person between the two nodes that are intercepting all the communications and forwarding to the two nodes, making them believe they are communicating with each other. Meanwhile the middle node gets all the information.
 - DNS Poisoning : send bogus replies to DNS server, which caches the fake replies, making a request link to somewhere else.
 
 ## P2P Applications
+
 Bottleneck of file transfers are clients with the lowest downloading speed. Or the server can be the bottleneck (unlikely, most of the time the client is the bottleneck) due to low uploading speed. And the last possible bottleneck is the server and users working together to upload NF files (N items of F filesizes).
 
 ### Napster
+
 Users need to install application, after installation, report status to central directory server (if you are on or not, what kind of files in disk space, these are uploaded to server). Directory server will check who is online and what sort of content is available in the disk space. Then get the client with highest bandwith and smallest delay with the user that wants to download, and then make the user download from that client. The central server only maintains a list of who has a certain file.
 
 User wants to find out who has something, send request to server. Then server will inform you with the best user that can serve you. Then user will contact the server user and download the item. Scalability of the system is nice since all traffic happens between users.
@@ -143,14 +155,17 @@ Issue with Napster is legal issue. As it means that if at least one user is payi
 This is a server peer to peer.
 
 ### Gnutella
+
 Searching in a peer to peer situation is extremely tough. Due to the propagating query. Even though a peer has already returned the answer, other peers may not be able to find out this information. So the issue with P2P search is it is not comprehensive (might not get result) and inefficiency.
 
 This is pure peer to peer.
 
 ### KaZaA
+
 Hierarchical structure. Basically a super-peer system. There are super peers that act as servers (like in Napster system) if this super node knows of the information, then it will inform the requesting node. If not the super node will communicate with other super nodes in a pure peer to peer way (like in Gnutella).
 
 > In cluster, like napster, among super nodes, like Gnutella.
 
 ### BitTorrent
-Strategy is if you contribute more, you have a higher chance to get served better. 
+
+Strategy is if you contribute more, you have a higher chance to get served better.

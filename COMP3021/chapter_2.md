@@ -111,3 +111,91 @@ Recall that instance is a specific instance of a class. Instance variables belon
 Static methods can be called even when you don't have an object. You simply need to call it. However, you mustn't put instance variables in static methods, as the instance variables doesn't exist yet.
 
 An instance can access class variables. Even though you are able to achieve the same result by using the classname. But for instance variables, only way to access is with the object name.
+
+## Useful Classes
+
+### The Date Class
+
+Default constructor : current time. A certain date, use special constructor (pass in time).
+
+> Almost all classes in Java has a `toString` method that gives you a string representation of the object. Is a Java convention.
+
+### The Random Class
+
+For obtaining random numbers. Better than `Math.random` class due to certain methods allowing more flexibility in random number generation. More general.
+
+The constructor expects a random seed. However if you don't give it, the constructor will use the current time as a seed.
+
+### Point 2D Class
+
+Used to represent a point in 2D plane. Can also compute distance between 2 points.
+
+## Access Modifier and Accessor/Mutator methods
+
+- `public` : anyone can see
+- `default` : in same folder / package
+- `private` : only internally inside the class
+- `protected` : restricts to only subclasses (in or different package).
+
+Class keyword in Java is used to define new type, normally before `class` keyword you put the `public` (or `default` modifier. You are not allowed to put `protected` and `private`.
+
+> Note, except when you have inner classes. Then you can give it `private`
+
+Instance variables should be kept `private`. Methods are usually `public` however, you can assign a `private` to method if you only intend to use it inside the class.
+
+If you only provide `getter` and no `setter` it implies that you don't want people to be able to modify the value of the instance variable.
+
+To pass by value, you must use primitive type variables. Non-primitive are by default references, meaning you pass by reference by default.
+
+## Array of Objects
+
+Standard array manipulation:
+
+```java
+double[] arr = new double[10];
+arr[1] = 1.234567;
+```
+
+Array of Objects:
+
+```java
+Haha[] hahaha = new Haha[10];
+//Creates empty references to objects (10 pointers) not 10 object instances.
+for(int i = 0; i< 10; i++) {
+  hahaha[i] = new Haha();
+}
+```
+
+Another example:
+
+```java
+// Suppose we have defined a class "Person" with a
+// default constructors
+// *** To create an array, of Person objects, we do ***
+
+Person[] personArr = new Person[10]; // Remember as shown above, this is just 10 references
+for (int i = 0; i<10; i++) {
+  personArr[i] = new Person();  //Here is where the objects are created.
+}
+
+personArr[1] = null; //Deletes the single object instance
+personArr = null; //Wipes the whole array
+```
+
+Often a method is defined to get back the array of objects. (create the array only) This is done for readability.
+
+> `printf` for formatted printing, `%[-number]s`, the number will declare the size of each string, each `%s` means you'll substitute something. The `-` before the number means left-justified. For right-justified text, just remove the `-` or put a `+` instead.
+
+## Immutable Objects and Classes
+
+- All data fields are `private`
+- No mutators, at all
+- Can define get method, however can be risky. As you can return the reference to an object instead of the value only. Meaning you can mutate the object.
+
+> To define an immutable class, then you need to satisfy, all instance variables are `private`, no set method, no get method that returns reference to instance variables.
+
+## `this` keyword
+
+Name conflict resolution `this`. When you do this you can differentiate between the variables of the class and argument variables.
+
+Can also use to call the constructor from somewhere else.
