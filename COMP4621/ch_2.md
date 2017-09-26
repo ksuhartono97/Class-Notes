@@ -169,3 +169,45 @@ Hierarchical structure. Basically a super-peer system. There are super peers tha
 ### BitTorrent
 
 Strategy is if you contribute more, you have a higher chance to get served better.
+
+Each torrent has a tracker. The tracker tracks the people who are in the torrent.
+
+Typical torrent procedure:
+
+- A peer joins a torrent, accumulates peers by registering with tracker.
+- Peer uploads chunks while also downloading
+- Once the peer finished downloading the file, the peer becomes important as the peer has all the data. Meaning it is an important server. However, this peer can leave at any time.
+
+> Chain rate, the rate at which users drop out of the torrent, the higher it is means that a higher number of people drop out of the network.
+
+#### Requesting Chunks
+
+In a peer to peer system usually the last chunk is really hard to get (in an ordered chunk request system). This is due to people that leave when they have the whole file.
+
+In BitTorrent, they try and make it that everyone contributes. They start people's downloads by making the new peers download the rarest chunk. Meaning that the chance that the chunk becomes unavailable grows lesser. This applies to all the chunks!
+
+> Request for chunk that is rarest.
+
+#### Sending chunks
+
+Tit-for-tat strategy, if you contribute, you will get a reward. The implementation is that if you send chunks to people at a high disk rate, those people will also send chunks back to you. Basically no randomness, the more you contribute, the faster you get your chunks. As you become high priority.
+
+But not only that is applied, the design considers that one of the peers may have never had the chance to contribute. So it has a design of **optimistically unchoke**, basically someone who you don't send chunks to, might have a good connection with you. Therefore, every 30 secs, there will be a randomly selected peer and send a chunk. Then you will see the behavior of this peer, if he is bad then stop sending.
+
+The top 4 list is maintained by the user, each user maintains their own list.
+
+Best situation is that there is only 1 copy of the data that has to be sent to the torrent. The people doesn't have to go back and request data to the server.
+
+#### Distributed Hash Table
+
+System becomes a distributed database, by trying to put a certain piece of content in a certain place so that when people try to find items, we know how to guide you to it. This is used to structure peer-to-peer.
+
+For a certain file or content, we have to put it somewhere. So there's a key-value database, in which we have a key to identify the item, that has a value of the IP address location of the content. Then we distribute these key-value pairs to the users (usually in the millions number). So when a user asks where a certain file is, we can tell them where the file is.
+
+Each key will be converted to an integer, and then each peer will get an integer number assigned to them. Then we will put the key-value pair to the node that has the closest id to the integer key representation. Convention of closest is the **immediate successor** for this lecture.
+
+Any incoming request can come to any node in the system. How does this node find the key? Ask the successor or predecessor. For example, ask in successor direction where the key is stored, and it will propagate forward until the key is found. However in this implementation the complexity is O(n).
+
+So the solution to simplify it, is that they keep some shortcuts to other nodes. So it is possible to design a network that you are guaranteed to be able to achieve O(log n) complexity.
+
+Note that you only need to send to the node that is **closest** to your destination. You do not send to all the targets.
