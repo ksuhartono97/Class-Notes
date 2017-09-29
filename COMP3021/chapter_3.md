@@ -109,3 +109,59 @@ Basically doing typecasting.
 ## `StringBuilder` and `StringBuffer`
 
 Are mutable classes as opposite to normal strings who are immutable. More useful in cases when you want to manipulate the `String` multiple times. Unlike the default `String` object where you'll keep on recreating a new object everytime you change it. It is much better to use the `StringBuilder` class.
+
+## Converting string type to other types
+
+`<Datatype>.parse<Datatype>()`, examples:
+
+- `Integer.parseInt(string)`
+- `Double.parseDouble(string)`
+
+## Wrapper Classes
+
+> Recall: You cannot pass primitive datatypes by reference in Java. To pass something by reference you must use non-primitive datatypes.
+
+However, if you'd like to pass by reference, there are wrapper classes for the 8 primitive datatypes. A wrapper class is a class that can encapsulate the datatype's data. Achieved through owning an instance variable of the datatype to contain the datatype's value. It also provides methods to modify the data.
+
+```java
+public class Example {
+  public static void main (String args[]) {
+    int a = 10;
+    Integer aa = new Integer(10); //Create a wrapper class
+
+    int b = aa; // Legal
+    //Java knows that the primitive type and the wrapper object is actually equivalent
+    //So it will extract the value and assign it for you
+    //This is called UNBOXING
+
+    aa = 20; //Is also legal
+    //This is called boxing
+    //However, here it instantiates a new object instead of modifying the value.
+
+    aa++; //Also works
+  }
+}
+```
+
+**Autoboxing** means both boxing and unboxing. This basically allows the wrapper class to be used the same way as the data type.
+
+There are no default constructors for the `Integer` and `Double` classes, but it has 2 conversion constructors, one expects the primitive type input the other expects a String input.
+
+When you attempt to convert a non numerical value to the wrapper class String constructor, it will give an exception.
+
+To get the stored value, you can use the accessor `<datatype>Value()`, for instance `intValue()` and `doubleValue()`. You can also use these methods to convert a datatype to a different datatype.
+
+`valueOf()` method can be used to convert a numeric string to the wrapper class.
+
+```java
+public class Example {
+  public static void main(String args[]) {
+    Integer haha = new Integer(123);
+    int a = haha; //unboxing
+    int b = haha + haha; //2 unboxing
+    Integer c = haha + haha; //2 unboxing and 1 boxing
+  }
+}
+```
+
+> %h is used to print out the hashcode.
