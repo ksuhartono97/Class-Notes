@@ -165,3 +165,10 @@ public class Example {
 ```
 
 > %h is used to print out the hashcode.
+
+> **All** wrapper classes are immutable!! Even the String wrapper! Remember for T/F
+
+```java
+Integer a = 10;
+a = 20; // a = new Integer(20); this is what Java does
+```
