@@ -67,3 +67,30 @@ Upper level evoke `rdt_send()` and then the transport layer will invoke `udp_sen
 - In version 2.1 a `0` and `1` state would be enough to differentiate the states of the packets for both receiver and sender. Remember that for all the packet transmissions you'll have to send a checksum with it, also beware of duplications that need to be handled correctly. This version is a complete protocol, unlike the previous versions.
 - Version 2.2: removed NAK completely, if you obtain the packet you send ACK. However, if you fail to get the packet, you send an ACK of the previous received packet. Thus triggering a retransmission. In that sense, any duplicated ACK means that something is wrong in the receiver side, so you can retransmit the current packet. In the very beginning of the system, you'll have to send a special ACK that you can use so that there is the first packet that is sent.
 - Version 3.0 : The previous version is able to efficiently handle transmission errors. Now we consider the assumption that some packets can get lost due to buffer size issues of the router. To handle loss, we wait for a "reasonable" amount of time for an ACK response (Should take approximately an RTT). If there is no feedback, there should be something wrong with the sent packet, so the sender will guess that the packet is lost (it is just a guess, as the sender will not be able to know what happens). If the packet is lost then the sender will retransmit. However, it is very possible that the guess is wrong and that the packet is just delayed. So it could mean that the transmitted packet could be duplicated. However this is not a big issue, as there is already duplicate handling.
+
+> Version 3.0 basically introduces a timeout function.
+
+### Pipelined Protocols
+Two forms of pipeline protocol
+- Go-Back-N
+- Selective Repeat
+
+#### Go-Back-N
+Characteristic is cumulative ACK, meaning that basically if there is a gap between the packets, it won't send any ACK packets. As it suspects that something is lost.
+
+The ACK will return a certain sequence number, meaning that if you get duplicated ACK's multiple times, it means that something went wrong during transmission.
+
+When timer expires, will have to retransmit all packets with sequence number larger than N. (All the packets in the window).
+
+The window and buffer size is determined by the router.
+
+Receiver side, only receive and check whether it is what is expected. And then give feedback to sender side. The ACK side will always send the highest inorder sequence number. If the packets are received out of order, the newly received packets are dropped. And send the last received ACK, see slides for example.
+
+#### Selective Repeat
+Gives individual ACK. Extremely specific, if a packet is sent, when received I will send an ACK for the packet with its details. Sets a timer for every single packet being set, so that when the timeout happens, just retransmit that specific packet.
+
+Sender : received data from above, check if window can receive extra packets from application level. If receive acknowledgement from receive side, mark packet as sent. Then, check if all the packets with sequence number below that packet is received already, if it is move the sliding window, else do not move it.
+
+Receiver side : Also has a window. Simply receive the packets and send ACKs for the packets. Even if it is out of order, still mark it as sent. When all the packets are in order, move the window and send the packets to the upper level.
+
+Efficiency wise, this is much better than go-back-n. However, you need to set a timer for every single of inflight packets. This is too much for the transport layer.
