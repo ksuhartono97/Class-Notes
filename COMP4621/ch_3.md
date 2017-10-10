@@ -94,3 +94,28 @@ Sender : received data from above, check if window can receive extra packets fro
 Receiver side : Also has a window. Simply receive the packets and send ACKs for the packets. Even if it is out of order, still mark it as sent. When all the packets are in order, move the window and send the packets to the upper level.
 
 Efficiency wise, this is much better than go-back-n. However, you need to set a timer for every single of inflight packets. This is too much for the transport layer.
+
+## TCP
+A typical reliable data transfer protocol (the most widely and well deployed transfer protocol).
+
+- Is a point to point protocol : has one sender and receiver
+- Is full duplex : no need to setup a new connection when the receiver want to talk to sender (bi-directional, communication works two ways)
+- Flow control : regulate the number of packets sent so it doesn't overwhelm the receiver. (As the buffer exists in the receiver)
+- Handshaking : to ensure that both sender and receiver are ready to communicate with each other.
+
+Has a header, similar to UDP, but has more content than UDP as this is a reliable protocol (need to have pipeline, flow and congestion control)
+
+Uses cumulative ACKs, but we do not want to do unnecessary transmission.
+
+### Timeouts
+In TCP is related to the RTT, as in the past i've received something for the packet transmission at that amount of time. Intuitively, there should be a sort of relation that can be expected here. However using same RTT as before as a timer setting is very aggressive, as the network condition could be either better or worse than previously. If the rule is to rigid, there will be a lot of retransmits (vice versa, when too relaxed will be too conservative, wait too long).
+
+### TCP RDT
+Maintain a single retransmission timer for the oldest not yet acknowledged segment.
+
+TCP sender and receiver
+
+An updated acknowledgement basically tells the sender that it can proceed to send a newer version of the packet.
+
+### Flow control
+Done to make the receiver inform the sender about it's buffer capacity.
