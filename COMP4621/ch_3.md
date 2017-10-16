@@ -119,3 +119,37 @@ An updated acknowledgement basically tells the sender that it can proceed to sen
 
 ### Flow control
 Done to make the receiver inform the sender about it's buffer capacity.
+
+### Connection Management
+Before doing data exchange, we do a handshake to establish agreement to connect and the parameters of the connection.
+
+Will turn down the communication if after some time there is no connection happening (release resources for future connection).
+
+#### 2 way handshake
+Failure scenario : The accepted connection comes too slow, resulting a retransmit connection, however this retransmission is taking a longer time. During the time, the original accepted connection arrives and then the connection is done by the client. After the connection is finished, the retransmitted connection finally arrives at the server side. However, there is no client for that connection.
+
+#### 3 way handshake
+The server side will listen for a SYN from the client. When the server receives the SYN, it sends a SYNACK, when the client sees this, it will send a SYNACK for the SYNACK of the server and establish a connection. When the server receives the SYNACK for its SYNACK, it also establishes the connection.
+
+#### Closing a connection
+When the client has sent a closing connection request, it can't send data but can still receive data. It will wait for a server close which will be indicated by an ACK bit sent by the server. Then the server will also send a close request, and wait for ACK from the client, at this point the server cannot send any data either.
+
+## Congestion Control
+Congestion is when too many sources sending too much data for network to handle. The way to prevent this is to control the sending such that it doesn't overwhelm the network. The result of congestion is that there are long packet delays and packet loss.
+
+### Cause and Costs of Congestion
+Scenario 2 : there is a finite buffer, meaning that the router can reject when buffer is full, causing there to be a retransmission in the client. The assumption here is that there is perfect knowledge of the router, as in it will only send when the router buffers are available (unlikely to be known in reality) and to resend if the packet is *known* to be lost (very hard to know in reality)
+
+> Goodput : the effective amount of data that you transfer through the network
+
+Costs of congestion in this scenario is that it lowers the goodput of the network. (throughput increases due to unneeded transmissions and this decreases the goodput).
+
+Scenario 3 : Four senders, multihop paths, and timeout or retransmit. Another cost of congestion, when a packet is dropped, any upstream transmission capacity used for the packet was wasted.
+
+All the congestion costs imply that there needs to be cooperation to prevent network congestion. As too much congestion will decrease performance of network and even personal network.
+
+### ATM ABR Congestion control
+Interleave a RM(resource management) cell between a number of data cells. There is an ER(explicit rate) field that tells the senders about the max send rate. However, these cells cause too much overhead.
+
+### TCP congestion control : additive increase multiplicative decrease
+The sender increases the transmission rate until loss occurs (to test the rate capability of the network), the moment it detects the loss, half the sending rate. The point is we are probing for network bandwith. Sometimes called as the network probing technique. As the sender uses the protocol to estimate the network's capacity. 
