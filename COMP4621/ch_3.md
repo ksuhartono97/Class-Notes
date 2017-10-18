@@ -65,17 +65,21 @@ Upper level evoke `rdt_send()` and then the transport layer will invoke `udp_sen
     - If the receiver receives a packet, it is not corrupted, and is the right packet, however, the sequence number is wrong. For example, expected packet 0 but you get packet 1\. This means that there is a duplication. The issue here is that the sender cannot understand the feedback, resulting in the sender to resend the packet. And in this case, this packet just gets dropped. And then, you'll have to send the acknowledgement so that it triggers the sender to send the next packet.
 
 - In version 2.1 a `0` and `1` state would be enough to differentiate the states of the packets for both receiver and sender. Remember that for all the packet transmissions you'll have to send a checksum with it, also beware of duplications that need to be handled correctly. This version is a complete protocol, unlike the previous versions.
+
 - Version 2.2: removed NAK completely, if you obtain the packet you send ACK. However, if you fail to get the packet, you send an ACK of the previous received packet. Thus triggering a retransmission. In that sense, any duplicated ACK means that something is wrong in the receiver side, so you can retransmit the current packet. In the very beginning of the system, you'll have to send a special ACK that you can use so that there is the first packet that is sent.
 - Version 3.0 : The previous version is able to efficiently handle transmission errors. Now we consider the assumption that some packets can get lost due to buffer size issues of the router. To handle loss, we wait for a "reasonable" amount of time for an ACK response (Should take approximately an RTT). If there is no feedback, there should be something wrong with the sent packet, so the sender will guess that the packet is lost (it is just a guess, as the sender will not be able to know what happens). If the packet is lost then the sender will retransmit. However, it is very possible that the guess is wrong and that the packet is just delayed. So it could mean that the transmitted packet could be duplicated. However this is not a big issue, as there is already duplicate handling.
 
 > Version 3.0 basically introduces a timeout function.
 
 ### Pipelined Protocols
+
 Two forms of pipeline protocol
+
 - Go-Back-N
 - Selective Repeat
 
 #### Go-Back-N
+
 Characteristic is cumulative ACK, meaning that basically if there is a gap between the packets, it won't send any ACK packets. As it suspects that something is lost.
 
 The ACK will return a certain sequence number, meaning that if you get duplicated ACK's multiple times, it means that something went wrong during transmission.
@@ -87,6 +91,7 @@ The window and buffer size is determined by the router.
 Receiver side, only receive and check whether it is what is expected. And then give feedback to sender side. The ACK side will always send the highest inorder sequence number. If the packets are received out of order, the newly received packets are dropped. And send the last received ACK, see slides for example.
 
 #### Selective Repeat
+
 Gives individual ACK. Extremely specific, if a packet is sent, when received I will send an ACK for the packet with its details. Sets a timer for every single packet being set, so that when the timeout happens, just retransmit that specific packet.
 
 Sender : received data from above, check if window can receive extra packets from application level. If receive acknowledgement from receive side, mark packet as sent. Then, check if all the packets with sequence number below that packet is received already, if it is move the sliding window, else do not move it.
@@ -96,6 +101,7 @@ Receiver side : Also has a window. Simply receive the packets and send ACKs for 
 Efficiency wise, this is much better than go-back-n. However, you need to set a timer for every single of inflight packets. This is too much for the transport layer.
 
 ## TCP
+
 A typical reliable data transfer protocol (the most widely and well deployed transfer protocol).
 
 - Is a point to point protocol : has one sender and receiver
@@ -108,9 +114,11 @@ Has a header, similar to UDP, but has more content than UDP as this is a reliabl
 Uses cumulative ACKs, but we do not want to do unnecessary transmission.
 
 ### Timeouts
+
 In TCP is related to the RTT, as in the past i've received something for the packet transmission at that amount of time. Intuitively, there should be a sort of relation that can be expected here. However using same RTT as before as a timer setting is very aggressive, as the network condition could be either better or worse than previously. If the rule is to rigid, there will be a lot of retransmits (vice versa, when too relaxed will be too conservative, wait too long).
 
 ### TCP RDT
+
 Maintain a single retransmission timer for the oldest not yet acknowledged segment.
 
 TCP sender and receiver
@@ -118,27 +126,34 @@ TCP sender and receiver
 An updated acknowledgement basically tells the sender that it can proceed to send a newer version of the packet.
 
 ### Flow control
+
 Done to make the receiver inform the sender about it's buffer capacity.
 
 ### Connection Management
+
 Before doing data exchange, we do a handshake to establish agreement to connect and the parameters of the connection.
 
 Will turn down the communication if after some time there is no connection happening (release resources for future connection).
 
 #### 2 way handshake
+
 Failure scenario : The accepted connection comes too slow, resulting a retransmit connection, however this retransmission is taking a longer time. During the time, the original accepted connection arrives and then the connection is done by the client. After the connection is finished, the retransmitted connection finally arrives at the server side. However, there is no client for that connection.
 
 #### 3 way handshake
+
 The server side will listen for a SYN from the client. When the server receives the SYN, it sends a SYNACK, when the client sees this, it will send a SYNACK for the SYNACK of the server and establish a connection. When the server receives the SYNACK for its SYNACK, it also establishes the connection.
 
 #### Closing a connection
+
 When the client has sent a closing connection request, it can't send data but can still receive data. It will wait for a server close which will be indicated by an ACK bit sent by the server. Then the server will also send a close request, and wait for ACK from the client, at this point the server cannot send any data either.
 
 ## Congestion Control
+
 Congestion is when too many sources sending too much data for network to handle. The way to prevent this is to control the sending such that it doesn't overwhelm the network. The result of congestion is that there are long packet delays and packet loss.
 
 ### Cause and Costs of Congestion
-Scenario 2 : there is a finite buffer, meaning that the router can reject when buffer is full, causing there to be a retransmission in the client. The assumption here is that there is perfect knowledge of the router, as in it will only send when the router buffers are available (unlikely to be known in reality) and to resend if the packet is *known* to be lost (very hard to know in reality)
+
+Scenario 2 : there is a finite buffer, meaning that the router can reject when buffer is full, causing there to be a retransmission in the client. The assumption here is that there is perfect knowledge of the router, as in it will only send when the router buffers are available (unlikely to be known in reality) and to resend if the packet is _known_ to be lost (very hard to know in reality)
 
 > Goodput : the effective amount of data that you transfer through the network
 
@@ -149,7 +164,27 @@ Scenario 3 : Four senders, multihop paths, and timeout or retransmit. Another co
 All the congestion costs imply that there needs to be cooperation to prevent network congestion. As too much congestion will decrease performance of network and even personal network.
 
 ### ATM ABR Congestion control
+
 Interleave a RM(resource management) cell between a number of data cells. There is an ER(explicit rate) field that tells the senders about the max send rate. However, these cells cause too much overhead.
 
 ### TCP congestion control : additive increase multiplicative decrease
-The sender increases the transmission rate until loss occurs (to test the rate capability of the network), the moment it detects the loss, half the sending rate. The point is we are probing for network bandwith. Sometimes called as the network probing technique. As the sender uses the protocol to estimate the network's capacity. 
+
+The sender increases the transmission rate until loss occurs (to test the rate capability of the network), the moment it detects the loss, half the sending rate. The point is we are probing for network bandwith. Sometimes called as the network probing technique. As the sender uses the protocol to estimate the network's capacity.
+
+> This may not be the case in wireless networks, especially in low speed wireless networks. Due to the characteristic differences compared to the wired networks. Due to the error rate difference between wireless and wired. There is a larger loss (bit flips happening) in wireless networks.
+
+Every roundtrip, the congestion window is only increased by 1 segment size (MSS) as to not be to aggressive. But if there are loss or duplicated results, we simply half the size of the window. So in this algorithm, the behaviour would look something like tooth behaviour, gradual increase and a rapid drop. As it updates the window size all the time.
+
+### TCP Slow Start
+
+On initialize, increase rate exponentially until first loss event, start with 1 MSS(maximum segment size) and double it every RTT.
+
+TCP Tahoe, if you see 3 duplicate ACKs, set congestion window to 1.
+
+TCP Reno, increase congestion window linearly.
+
+Switching from slow start to CA (congestion avoidance, using AIMD), we use a `ssthresh` which is set based on knowledge of the network. When the slow start MSS is bigger than the threshold, we switch to AIMD.
+
+### Fairness
+
+In the case of UDP, we do not want our speed to be throttled by congestion control, so we must transmit at a constant rate, even if there are packet loss, we tolerate the packet loss.
