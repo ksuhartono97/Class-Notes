@@ -31,3 +31,11 @@ Basically add elements and connect everything to the mediator. Uses a central co
 ### Object-oriented adapters
 
 To bridge your code with a vendor's code, allowing two interfaces that are incompatible to be used together.
+
+### Decorator pattern
+Adds additional responsibilities to an object dynamically.
+
+### Singleton pattern
+Ensuring that a class has only one instance, and provides a global point of access to it.
+
+Thread safe definition, define the singleton object in one line so that it is considered an atomic operation

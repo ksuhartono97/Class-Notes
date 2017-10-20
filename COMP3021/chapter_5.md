@@ -75,3 +75,88 @@ public void method2() {
   }
 }
 ```
+
+Before executing code in the `throw` block you must do all the things in the `finally` block.
+
+If the method is going to have an exception, and the method doesn't catch it, the method header must have `throws <exception class name>` and it can have multiple exception classes.
+
+### Exception Propagation
+
+Remember that when there is exception object thrown, the code lines under the part where the exception happened is not executed. Even in the case of nested function calls, the function where the exception happened is considered an exception until the exception is caught.
+
+### Multiple Throws and Catches
+
+One `try` block can have more than one `catch` blocks. Also works for `throws`, the method can have more than 1 `throw`.
+
+```java
+try {
+  ...
+}
+catch(Exception e1) {
+  ...
+}
+catch(ArithmeticException e2) {
+
+}
+catch(IOException e3) {
+  ...
+}
+// This code would say that that e2 and e3 are unreachable
+// Due to e2 and e3 being a subclass of e1\. Meaning that any exceptions
+// will get caught by e1.
+```
+
+So if you want to do something like the above code, put the more **specific** ones before the more general one.
+
+### Rethrowing Exceptions
+
+A thrown exception can be rethrown in the `catch` block. The reason why we would do that is that we want to tell the method that calls it that there was an error, even though it has been handled. The keyword used is still `throw`.
+
+### Notes on using exceptions
+
+- Must use `try`, without `try` cannot put a `catch` block
+- A `try` must be followed with `catch` or `finally`
+- Don't put statements in between `try` and `catch`
+- A `try` with only `finally` must still declare the exception in the function header
+
+### Define Custom Exception Classes
+
+Define a class that extends `Exception`.
+
+> Notes, remember that even if there is a `return` statement, the line under `finally` will be executed. The only way that the finally will not be executed is by calling `System.exit(0)`
+
+> If you throw a **checked** exception, and then it gets rethrown, you must still put a `throws` in the function header.
+
+## Assertions
+
+Asserts an assumption about your program. The syntax is `assert <boolean expression>`. Used to deal with the correctness of the program. Mainly used for the programmer's own problems (tackling programming bugs). But for exceptions, it is mostly used to handle user and other programmer problems.
+
+You generally don't use assertion to check whether method input parameters are correct or not.
+
+> Solution to slide 50:
+
+> - if else
+> - exception
+> - assertion
+> - exception
+> - assertion
+
+## File I/O
+
+Need to access data stored in long term memory.
+
+### File Class
+
+`File <varname> = new File("<pathname>")` is how you define a new file object.
+
+The file class has multiple methods to check the validity of the file and get information about the file.
+
+### PrintWriter Class
+
+Used to write data into a file, but you can only write **plaintext** to write into a file.
+
+Remember, must `close()` the file if you do not close the file, **the data will not be written to the file**. The data is written to the file when the file is closed.
+
+### Reading Data from the Web
+
+Need a URL object, `URL url = new URL("<url>")`, then you open it with `Scanner input = new Scanner(url.openStream())`. This will allow you to access data from a file on the web.
