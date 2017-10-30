@@ -23,7 +23,7 @@ The benefits of packet switching is that it has better scalability and is able t
 
 The benefits of circuit switching is the ensured all time access for both hosts, they can communicate anytime they want as the resources are always available. The problem with it is that it has limited number of resources (not as scalable) and it has resource utilization problems as the resources are reserved for the use of only the two hosts (other people who need it can't use it)
 
-Use binomial distribution to figure out probability of the dic
+Use binomial distribution to figure out probability.
 
 ### Two key network core functions
 - Routing: figures out a source to destination route that the packet will need to take.
@@ -56,6 +56,7 @@ Layering is not necessarily the best solution but it is good due to the its scal
 Client-server:
 - Always on with a permanent IP address
 - Client do not directly communicate with each other
+
 P2P :
 - No always on server
 - Arbitrary end system directly communicate with each other
@@ -68,6 +69,7 @@ Need to use both IP address and port number to directly specify which process ru
 TCP:
 - Is connection oriented
 - Provides reliable data transfer, flow control, and congestion control
+
 UDP:
 - Does not need a connection (connection less).
 - Unreliable data transfer
@@ -130,7 +132,7 @@ Needed to increase internet speed, as a cheaper and more viable solution compare
 
 Formulas:
 - Access link utilization : Average request rate / Access link rate. Remember to scale it with amount that actually goes to server (not in cache).
-- Total delay : normally, Internet delay + access delay + LAN delay. If with cache then: <percentage not in cache> * (delay from origin server) + <percentage in cache> * (delay when satisfied in cache).
+- Total delay : normally, Internet delay + access delay + LAN delay. If with cache then: (percentage not in cache) * (delay from origin server) + (percentage in cache) * (delay when satisfied in cache).
 
 #### Conditional GET
 Basically, do not send object if cache has an up-to-date cached version. Used between client and the server(cache). Only sends an html code 304 for not modified.
@@ -299,7 +301,7 @@ TCP methods:
   - TCP Tahoe : reset the cwnd size to 1
   - TCP Reno : half the cwnd and then increase linearly (AIMD)
 
-Concept is use Tahoe when timeout and Reno when duplicated ACK. 
+Concept is use Tahoe when timeout and Reno when duplicated ACK.
 
 When the slow start MSS is bigger than the threshold, we switch to AIMD.
 
