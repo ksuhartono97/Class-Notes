@@ -12,15 +12,20 @@ Important:
 - Abstract class cannot contain private methods (cannot be overridden if private)
 - Abstract class can have constructors to be called by the subclasses
 - Subclass need to provide definitions for all the abstract methods, unless the subclass is also abstract.
-- A subclass can override a method in superclass and make it abstract ```Java class Haha { public void desmond() {
+- A subclass can override a method in superclass and make it abstract
 
-  } }
+```Java
+class Haha { public void desmond() {
 
-public abstract class Hehe extends Haha{ public abstract void desmond() {
+  }
+}
 
-} }
+public abstract class Hehe extends Haha{
+  public abstract void desmond() {
 
-````
+  }
+}
+```
 
 ## Interfaces
 Similar to class, but only put constants (`public static final` variables) and abstract methods.
