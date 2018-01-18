@@ -26,8 +26,8 @@ GenericStack<String> stackOfString = new GenericStack<String>;
 
 A compiler error will occur if we attempt to use the class or method with an incompatible object (this is a benefit of using generics).
 
-Prior to JDK 1.5, this would give a runtime error instead of a compilation error. Now it'll give a runtime error, which is better since we can see it and fix it.
+Prior to JDK 1.5, this would give a runtime error instead of a compilation error. Now it'll give a compilation error, which is better since we can see it and fix it.
 
 An unparameterized generic class or interface is called a "raw type", it is roughly equivalent to putting `Object` to the type.
 
-The ? symbol is the wildcard symbol. 
+The ? symbol is the wildcard symbol.
