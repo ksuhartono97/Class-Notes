@@ -42,6 +42,33 @@ Baggging Example approach:
 
 ### SVMs
 
-Lines separating the groups should be as close to the groups as possible as that is going to lead to the smallest possibility of getting something wrong. The distance between the two lines that separate the groups is called the margin, and SVMs want to maximize the margins.
+Lines separating the groups should be as close to the groups as possible as that is going to lead to the smallest possibility of getting something wrong. The distance between the two lines that separate the groups is called the **margin**, and SVMs want to maximize the margins.
+
+> The margin is the biggest possible line between the points
+
+The support vectors are always parallel. In training an SVM, we are trying to find the margin.
 
 The notion is a representation made up of support vectors and a margin.
+
+The margin is a line that is perpendicular and intersects with the points.
+
+Cannot perfectly split the classes, then use the hinge loss function.
+
+What about curving lines? We need to convert them to a different dimension so that the points are linearly separable. This is done by using a distance function to convert the datapoints. This is called the **"kernel trick"**, the kernel must act like a distance function, but can in practice be anything, it's on the author to come up with a domain value.
+
+Generally distance functions are given to you as a default by the library.
+
+The kernel that is chosen will have a huge impact on the data.
+
+SVMs cannot learn any features, and the kinds of functions that it can approximate are functions that are linearly separable.
+
+## Quick review section
+Representation: sort of the blueprint
+
+Algorithm: the process to construct a house from blueprint given material
+
+Model: The house
+
+Cross validation: tool to ensure that the training approach is not limited to a single dataset.
+
+The bigger the dataset, the more folds you should have, a smaller dataset should have a smaller fold number.
