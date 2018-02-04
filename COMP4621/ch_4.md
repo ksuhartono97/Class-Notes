@@ -79,3 +79,47 @@ CIDR : Classless InterDomain Routing,
 How to obtain an IP address?
 - Hard coded by system admin in a file.
 - DHCP : dynamic host configuration protocol, a plug and play protocol, just turn on and run protocol, no need for any setups or configurations.
+
+## Routing Algorithms
+
+### Distance Vector
+Is a distributed design.
+
+Link cost change implies the appearance of bad news, and this bad news actually travels very slowly.
+
+### Hierarchical Routing
+Consists of AS networks.
+
+## Routing in the Internet
+
+### Routing Information Protocol (RIP)
+The distance metric is hops, where each link has a cost of 1. We do not want dynamic distance metric as it'll keep on changing.
+
+### Internet inter-AS routing: BGP
+BGP tries to let everyone know, that there is somebody in the world, if you want to reach them, there is a way to do so.
+
+Everyone in the AS periodically broadcast a message(advertisement), so that if someone new comes into the network, they know that they exist, and they know how to contact them.
+
+Gateway router, when it gets a path advertisement from a node, it doesn't necessarily receive the ad, it could just forward and broadcast it to the network.
+
+### Why different routings
+Policy:
+- Inter-AS: there are multiple admins, and each admin would want to control over how traffic is routed, and who is routed through the net.
+
+## Broadcast and Multicast routing
+Source duplication is very inefficient and not doable, due to the fact that there is simply no way of knowing who to send your packet to.
+
+### In network duplication
+- Flooding : when a node receive a packet, broadcast it to all neighbours. Very traffic heavy. There's so many messages going on, also there is the cycle that can be caused. When A1 is a neighbour to A2 and A1 sends to A2, but then A2 sends back to A1, and A1 sends again to A2, and so on.
+- Controlled flooding: node will only broadcast packets if it hasn't broadcasted it before, eliminates the cycle problem.
+  - RPF : reverse path forwarding, forward a packet only if it has the shortest path between node and source. Meaning that it will only do flooding if the node that receives it received it from the source. As shortest distance is only possible if you are the first node.
+- Spanning tree: allows no duplicated packet. The idea is to construct a spanning tree, where in the tree each node will send a unicast message to all nodes.
+
+### Multicast Routing
+You want to be able to do one to many broadcasting. There are a lot of applications that needs this kind of network support.
+
+The solution for multicast should come from the application side, not the network side. This is due to the complexity it creates for the network layer. Causing the network layer to become not scalable, which is why it is impossible to do.
+
+This is achieved through the use of the tree system again, and this tree will need to be constantly maintained.
+
+Pruning: when a user quits the system, you need to send a pruning message, requesting to be removed from the tree. 
