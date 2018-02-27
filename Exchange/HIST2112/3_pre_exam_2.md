@@ -46,3 +46,21 @@ Preached black sympathism.
 
 ## The Harlem Renaissance
 The result of the great migration, where African Americans left the South.
+
+## Glass-Steagall Banking Act
+Done to eliminate the ability of commercial banks to invest in the stock market, this was a cause of bank failure early on.
+
+## Industrial Reform
+NIRA didn't make distinction between interstate commerce and intrastate commerce, thus causing it to be shutdown by the Supreme Court on grounds of being unconstitutional.
+
+## Frances Townsend
+Townsend Plan: a pension plan for people 60 years or older where they get 200$ from the government every month. But the 200$ must be spent every month.
+
+## Social Security Act
+Motivated by Huey Long, was passed by Congress.
+
+## CIO and "sit-down strikes"
+CIO starts organizing the unskilled workers, since now they have some form of "government backing" they are able to organize themselves better. "Sit-down" strikes is basically going to a place and just sit there until they are removed.
+
+## Dust Bowl
+Dust storms that caused lots of death due to respiratory diseases. Displaced many people.
