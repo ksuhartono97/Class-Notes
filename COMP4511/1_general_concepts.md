@@ -50,3 +50,15 @@ Memory management:
 - Need to keep a mapping between virtual and physical pages. This is called the page table.
 - Demand paging: pages are brought in when needed. Memory management unit will call a pagefault, load the page to memory, and reexecute the instruction.
 - TLB (translation look-aside buffer): keeps track of recent translations in faster memory so we don't have to translate addresses repeatedly.
+- Virtual memory: allows sharing of the physical memory, gives a virtual address space that is longer than the actual space in physical memory.
+
+Buddy System: allocates memory in constant numbers of pages. The kernel keeps track of page frames that are allocated and free. The buddy system then divides the pages into buddies (sets that match each other).
+
+Filesystem:
+- inode: data structures associated with each files
+- Direct blocks point to the block directly, these are usually meant for small files. Then there are indirect blocks that point to an inode, which then points to the direct blocks. For larger files, it will need to do indirection. The cost of doing indirection is negligible due to the size of the file usually.
+- ProcFS: presents the RAM as a filesystem.
+
+ 
+
+> VFS is Virtual File System
