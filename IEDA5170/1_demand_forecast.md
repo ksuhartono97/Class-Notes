@@ -29,4 +29,15 @@ MNL: multinomial logit
 ## Time Series Models
 - Naive forecast: not really used, only for benchmark. too simple.
 - Moving average: cannot adjust to latest trend. Cannot choose m value (window size) that is too large otherwise we ignore any existing trend in the data.
-- 
+
+Double exponential smoothing: tao (t in greek) is the gradient of the smoothing.
+
+Triple exponential smoothing introduces seasonality. Defined as c<sub>t</sub> where t is the time period (e.g. season or quarter). The sum of these c values should be equal to N (the total number of seasons). 
+
+```
+c<sub>1</sub> + c<sub>2</sub> + ... + c<sub>N</sub> = N
+```
+
+Mostly the same as double exponential, just need to use the deseasonalized estimates. 
+
+Be careful with picking the value of the seasonal estimate (the c value, the formula is a bit weird for initial situation)
